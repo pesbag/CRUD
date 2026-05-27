@@ -1,0 +1,11 @@
+{
+    "id": 1,
+    "shape_type": "rectangle",
+    "_length": 9,
+    "_width": 8
+}
+{
+    "id": 2,
+    "shape_type": "circle",
+    "_radius": 8
+}

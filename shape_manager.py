@@ -9,7 +9,7 @@ from triangle import Triangle
 
 logger=logging.getLogger('shape')
 logger.setLevel(logging.INFO)
-formatter=logging.Formatter('%(asctime)s | %(levelname)s | %(massage)s')
+formatter=logging.Formatter('%(asctime)s | %(levelname)s | %(message)s')
 file_handler=logging.FileHandler('shape.log',encoding="utf-8")
 file_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
@@ -17,14 +17,16 @@ logger.addHandler(file_handler)
 def get_circle():
     radius = input("please enter radius of circle")
     try:
-        return (int(radius),)
+        # return (int(radius),)
+        return {"radius":int(radius)}
     except ValueError:
         print(f"Error: the value {radius} illegal")
 
 def get_square():
     side = input("please enter side of square")
     try:
-        return (int(side),)
+        # return (int(side),)
+        return {"side": int(side)}
     except ValueError:
         print(f"Error: the value {side} illegal")
 
@@ -32,11 +34,14 @@ def get_rectangle():
     width = input("please enter width of rectangle")
     length = input("please enter length of rectangle")
     try:
-        return int(width),int(length)
+        # return int(width),int(length)
+        return {"width":int(width),"length":int(length)}
     except ValueError:
         print(f"Error: the values {width},{length} illegal")
+
 def convert_from_obj_to_dict(obj):
-    return {"ID":obj.id, "Type":obj.shape_id,""}
+    return obj.__dict__
+
 class ShapeManager:
     def __init__(self):
         logger.debug("initialize shape manager")
@@ -55,8 +60,11 @@ class ShapeManager:
                    "rectangle":{"class":Rectangle,"input_func":get_rectangle}}
         target_type=shapes_dict[shape]
         shape_params_func=target_type["input_func"]()
-        self.shapes.append(target_type["class"](1,*shape_params_func))
-        # return self.shapes
+        new_shape_object=target_type["class"](1,**shape_params_func)
+        obj_dict=convert_from_obj_to_dict(new_shape_object)
+        self.shapes.append(obj_dict)
+        self.save_to_json(obj_dict)
+        # print(self.shapes)
 
     def get_all_shapes(self):
         """
@@ -84,13 +92,22 @@ class ShapeManager:
         logger.info("enter to delete shape")
         pass
 
-    def save_to_json(self):
+    def save_to_json(self,shape_dict):
         """
         save the shapes to json
         :return:
         """
         logger.info("enter to save_to_json")
-        pass
+        existing_data = self.load_from_json()
+        if not existing_data:
+            existing_data=[]
+        existing_data.append(shape_dict)
+        try:
+            with open("shapes.json","a",encoding="utf-8") as f:
+                json.dump(dict, f, indent=4, ensure_ascii=False)
+                print("Success to save the shape!")
+        except FileNotFoundError:
+            print("Error: json file was not found")
 
     def load_from_json(self):
         """
@@ -108,5 +125,9 @@ class ShapeManager:
             print("Error: cannot read the json file")
             data={}
         return data
-c=ShapeManager()
-print(c.create_shape("circle"))
+def main():
+    c=ShapeManager()
+    print(c.create_shape("rectangle"))
+    print(c.create_shape("circle"))
+if __name__ == '__main__':
+    main()
