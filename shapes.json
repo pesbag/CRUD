@@ -9,5 +9,16 @@
         "id": 2,
         "shape_type": "circle",
         "_radius": 3
+    },
+    {
+        "id": 1,
+        "shape_type": "rectangle",
+        "_length": 1,
+        "_width": 1
+    },
+    {
+        "id": 2,
+        "shape_type": "circle",
+        "_radius": 6
     }
 ]

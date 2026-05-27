@@ -48,7 +48,6 @@ class ShapeManager:
     def get_square(self):
         side = input("please enter side of square")
         try:
-            # return (int(side),)
             return {"side": int(side)}
         except ValueError:
             print(f"Error: the value {side} illegal")
@@ -63,6 +62,8 @@ class ShapeManager:
         shapes_dict={"circle":{"class":Circle, "input_func":self.get_circle},
                      "square":{"class":Square,"input_func":self.get_square},
                    "rectangle":{"class":Rectangle,"input_func":self.get_rectangle}}
+        # load to the list the exists objects for add them the new variables
+        self.shapes = self.load_from_json()
         target_type=shapes_dict[shape]
         shape_params_func=target_type["input_func"]()
         shape_id = self.find_id_to_shape(self.shapes)
