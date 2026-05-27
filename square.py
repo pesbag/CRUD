@@ -28,6 +28,12 @@ class Square(Shape):
         """
         logger.info("enter to get perimetr of square")
         return 4*self._side
+    # def get_params(self):
+    #     side = input("please enter side of square")
+    #     try:
+    #         return int(side)
+    #     except ValueError:
+    #         print(f"Error: the value {side} illegal")
 
 def main():
     s1=Square(5,7)

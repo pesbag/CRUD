@@ -9,11 +9,34 @@ from triangle import Triangle
 
 logger=logging.getLogger('shape')
 logger.setLevel(logging.INFO)
-formatter=logging.Formatter('%(asctime)s | %(levelname)s | %()s')
+formatter=logging.Formatter('%(asctime)s | %(levelname)s | %(massage)s')
 file_handler=logging.FileHandler('shape.log',encoding="utf-8")
 file_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
 
+def get_circle():
+    radius = input("please enter radius of circle")
+    try:
+        return (int(radius),)
+    except ValueError:
+        print(f"Error: the value {radius} illegal")
+
+def get_square():
+    side = input("please enter side of square")
+    try:
+        return (int(side),)
+    except ValueError:
+        print(f"Error: the value {side} illegal")
+
+def get_rectangle():
+    width = input("please enter width of rectangle")
+    length = input("please enter length of rectangle")
+    try:
+        return int(width),int(length)
+    except ValueError:
+        print(f"Error: the values {width},{length} illegal")
+def convert_from_obj_to_dict(obj):
+    return {"ID":obj.id, "Type":obj.shape_id,""}
 class ShapeManager:
     def __init__(self):
         logger.debug("initialize shape manager")
@@ -27,10 +50,14 @@ class ShapeManager:
         :return:
         """
         logger.info("enter to create shape")
-        lst_shape=[Circle,Square,Rectangle,Triangle]
-        for s in lst_shape:
-            if str(s).lower()==shape:
-                self.shapes.append(s.get_params())
+        shapes_dict={"circle":{"class":Circle, "input_func":get_circle},
+                     "square":{"class":Square,"input_func":get_square},
+                   "rectangle":{"class":Rectangle,"input_func":get_rectangle}}
+        target_type=shapes_dict[shape]
+        shape_params_func=target_type["input_func"]()
+        self.shapes.append(target_type["class"](1,*shape_params_func))
+        # return self.shapes
+
     def get_all_shapes(self):
         """
         get all shapes to user
@@ -81,3 +108,5 @@ class ShapeManager:
             print("Error: cannot read the json file")
             data={}
         return data
+c=ShapeManager()
+print(c.create_shape("circle"))
