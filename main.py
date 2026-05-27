@@ -12,11 +12,11 @@ def add_shape(shape_manage):
 
 def main():
     choice=show_menu()
-    shape_manage=shape_manager.ShapeManager
+    shape_manage=shape_manager.ShapeManager()
     if choice=="1":
         add_shape()
-    # if choice=="2":
-    #     shape_manager.get_all_shapes(self)
+    if choice=="2":
+        shape_manager.get_all_shapes(self)
 
 if __name__ == '__main__':
     main()

@@ -14,45 +14,44 @@ file_handler=logging.FileHandler('shape.log',encoding="utf-8")
 file_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
 
-def find_id_to_shape(all_data):
-    if not all_data:
-        return 1
-    return max([shape["id"] for shape in all_data])+1
-
-
-def get_circle():
-    radius = input("please enter radius of circle")
-    try:
-        # return (int(radius),)
-        return {"radius":int(radius)}
-    except ValueError:
-        print(f"Error: the value {radius} illegal")
-
-def get_square():
-    side = input("please enter side of square")
-    try:
-        # return (int(side),)
-        return {"side": int(side)}
-    except ValueError:
-        print(f"Error: the value {side} illegal")
-
-def get_rectangle():
-    width = input("please enter width of rectangle")
-    length = input("please enter length of rectangle")
-    try:
-        # return int(width),int(length)
-        return {"width":int(width),"length":int(length)}
-    except ValueError:
-        print(f"Error: the values {width},{length} illegal")
-
-def convert_from_obj_to_dict(obj):
-    return obj.__dict__
-
 class ShapeManager:
     def __init__(self):
         logger.debug("initialize shape manager")
         self.shapes = []
         self.load_from_json()
+
+    def convert_from_obj_to_dict(self,obj):
+        return obj.__dict__
+
+    def find_id_to_shape(self,all_data):
+        if not all_data:
+            return 1
+        return max([shape["id"] for shape in all_data]) + 1
+
+    def get_rectangle(self):
+        width = input("please enter width of rectangle")
+        length = input("please enter length of rectangle")
+        try:
+            # return int(width),int(length)
+            return {"width": int(width), "length": int(length)}
+        except ValueError:
+            print(f"Error: the values {width},{length} illegal")
+
+    def get_circle(self):
+        radius = input("please enter radius of circle")
+        try:
+            # return (int(radius),)
+            return {"radius": int(radius)}
+        except ValueError:
+            print(f"Error: the value {radius} illegal")
+
+    def get_square(self):
+        side = input("please enter side of square")
+        try:
+            # return (int(side),)
+            return {"side": int(side)}
+        except ValueError:
+            print(f"Error: the value {side} illegal")
 
     def create_shape(self, shape):
         """
@@ -61,14 +60,14 @@ class ShapeManager:
         :return:
         """
         logger.info("enter to create shape")
-        shapes_dict={"circle":{"class":Circle, "input_func":get_circle},
-                     "square":{"class":Square,"input_func":get_square},
-                   "rectangle":{"class":Rectangle,"input_func":get_rectangle}}
+        shapes_dict={"circle":{"class":Circle, "input_func":self.get_circle},
+                     "square":{"class":Square,"input_func":self.get_square},
+                   "rectangle":{"class":Rectangle,"input_func":self.get_rectangle}}
         target_type=shapes_dict[shape]
         shape_params_func=target_type["input_func"]()
-        shape_id = find_id_to_shape(self.shapes)
+        shape_id = self.find_id_to_shape(self.shapes)
         new_shape_object=target_type["class"](shape_id,**shape_params_func)
-        obj_dict=convert_from_obj_to_dict(new_shape_object)
+        obj_dict=self.convert_from_obj_to_dict(new_shape_object)
         self.shapes.append(obj_dict)
         self.save_to_json()
         # print(self.shapes)
