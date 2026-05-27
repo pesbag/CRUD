@@ -1,11 +1,13 @@
-{
-    "id": 1,
-    "shape_type": "rectangle",
-    "_length": 9,
-    "_width": 8
-}
-{
-    "id": 2,
-    "shape_type": "circle",
-    "_radius": 8
-}
+[
+    {
+        "id": 1,
+        "shape_type": "rectangle",
+        "_length": 6,
+        "_width": 8
+    },
+    {
+        "id": 2,
+        "shape_type": "circle",
+        "_radius": 8
+    }
+]

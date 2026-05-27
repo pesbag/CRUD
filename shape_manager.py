@@ -14,6 +14,12 @@ file_handler=logging.FileHandler('shape.log',encoding="utf-8")
 file_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
 
+def find_id_to_shape(all_data):
+    if not all_data:
+        return 1
+    return max([shape["id"] for shape in all_data])+1
+
+
 def get_circle():
     radius = input("please enter radius of circle")
     try:
@@ -60,10 +66,11 @@ class ShapeManager:
                    "rectangle":{"class":Rectangle,"input_func":get_rectangle}}
         target_type=shapes_dict[shape]
         shape_params_func=target_type["input_func"]()
-        new_shape_object=target_type["class"](1,**shape_params_func)
+        shape_id = find_id_to_shape(self.shapes)
+        new_shape_object=target_type["class"](shape_id,**shape_params_func)
         obj_dict=convert_from_obj_to_dict(new_shape_object)
         self.shapes.append(obj_dict)
-        self.save_to_json(obj_dict)
+        self.save_to_json()
         # print(self.shapes)
 
     def get_all_shapes(self):
@@ -92,22 +99,22 @@ class ShapeManager:
         logger.info("enter to delete shape")
         pass
 
-    def save_to_json(self,shape_dict):
+    def save_to_json(self):
         """
         save the shapes to json
         :return:
         """
         logger.info("enter to save_to_json")
-        existing_data = self.load_from_json()
-        if not existing_data:
-            existing_data=[]
-        existing_data.append(shape_dict)
+        # existing_data = self.load_from_json()
+        # if not existing_data:
+        #     existing_data=[]
+        # existing_data.append(shape_dict)
         try:
-            with open("shapes.json","a",encoding="utf-8") as f:
-                json.dump(dict, f, indent=4, ensure_ascii=False)
+            with open("shapes.json","w",encoding="utf-8") as f:
+                json.dump(self.shapes, f, indent=4, ensure_ascii=False)
                 print("Success to save the shape!")
-        except FileNotFoundError:
-            print("Error: json file was not found")
+        except Exception as e:
+            print(f"Error: failed to write to file: {e}")
 
     def load_from_json(self):
         """
@@ -120,10 +127,10 @@ class ShapeManager:
                 data=json.load(f)
         except FileNotFoundError:
             print("Error: The json file was not found")
-            data={}
+            data=[]
         except json.JSONDecodeError:
             print("Error: cannot read the json file")
-            data={}
+            data=[]
         return data
 def main():
     c=ShapeManager()
