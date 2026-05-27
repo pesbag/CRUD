@@ -78,7 +78,9 @@ class ShapeManager:
         get all shapes to user
         :return: list of shapes
         """
-        pass
+        all_shapes=self.load_from_json()
+        for s in all_shapes:
+            print(s)
 
     def update_shape(self, shape_id, new_data):
         """
@@ -134,7 +136,8 @@ class ShapeManager:
         return data
 def main():
     c=ShapeManager()
-    print(c.create_shape("rectangle"))
+    # print(c.create_shape("rectangle"))
     print(c.create_shape("circle"))
+    c.get_all_shapes()
 if __name__ == '__main__':
     main()
