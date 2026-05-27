@@ -97,3 +97,350 @@
 2026-05-27 17:20:42,837 | INFO | enter to load_from_json
 2026-05-27 17:20:49,796 | INFO | enter to save_to_json
 2026-05-27 17:20:49,797 | INFO | enter to load_from_json
+2026-05-27 17:36:42,604 | INFO | enter to load_from_json
+2026-05-27 17:36:42,604 | INFO | enter to create shape
+2026-05-27 17:36:42,604 | INFO | enter to load_from_json
+2026-05-27 17:36:45,606 | INFO | enter to save_to_json
+2026-05-27 17:36:45,607 | INFO | enter to load_from_json
+2026-05-27 17:37:18,147 | INFO | enter to load_from_json
+2026-05-27 17:37:18,147 | INFO | enter to create shape
+2026-05-27 17:37:18,147 | INFO | enter to load_from_json
+2026-05-27 17:37:20,431 | INFO | enter to save_to_json
+2026-05-27 17:37:20,432 | INFO | enter to load_from_json
+2026-05-27 18:01:20,182 | INFO | enter to load_from_json
+2026-05-27 18:01:20,183 | INFO | enter to create shape
+2026-05-27 18:01:20,183 | INFO | enter to load_from_json
+2026-05-27 18:01:26,427 | INFO | enter to save_to_json
+2026-05-27 18:01:26,427 | INFO | enter to get area of circle 
+2026-05-27 18:01:26,427 | INFO | enter to get perimetr of circle 
+2026-05-27 18:01:26,428 | INFO | enter to load_from_json
+2026-05-27 18:04:27,628 | INFO | enter to load_from_json
+2026-05-27 18:04:27,628 | INFO | enter to create shape
+2026-05-27 18:04:27,628 | INFO | enter to load_from_json
+2026-05-27 18:04:48,673 | INFO | enter to load_from_json
+2026-05-27 18:04:48,673 | INFO | enter to create shape
+2026-05-27 18:04:48,673 | INFO | enter to load_from_json
+2026-05-27 18:07:34,472 | INFO | enter to load_from_json
+2026-05-27 18:07:34,473 | INFO | enter to create shape
+2026-05-27 18:07:34,473 | INFO | enter to load_from_json
+2026-05-27 18:08:48,732 | INFO | enter to load_from_json
+2026-05-27 18:08:48,733 | INFO | enter to create shape
+2026-05-27 18:08:48,733 | INFO | enter to load_from_json
+2026-05-27 18:09:36,582 | INFO | enter to load_from_json
+2026-05-27 18:09:36,582 | INFO | enter to create shape
+2026-05-27 18:09:36,582 | INFO | enter to load_from_json
+2026-05-27 18:16:06,005 | INFO | enter to load_from_json
+2026-05-27 18:16:06,005 | INFO | enter to create shape
+2026-05-27 18:16:06,005 | INFO | enter to load_from_json
+2026-05-27 18:16:08,468 | INFO | enter to save_to_json
+2026-05-27 18:16:08,468 | INFO | enter to load_from_json
+2026-05-27 18:46:24,079 | INFO | enter to load_from_json
+2026-05-27 18:46:24,080 | INFO | enter to create shape
+2026-05-27 18:46:24,080 | INFO | enter to load_from_json
+2026-05-27 18:46:27,688 | INFO | enter to save_to_json
+2026-05-27 18:46:27,690 | INFO | enter to load_from_json
+2026-05-27 18:46:36,723 | INFO | enter to load_from_json
+2026-05-27 18:46:36,724 | INFO | enter to create shape
+2026-05-27 18:46:36,724 | INFO | enter to load_from_json
+2026-05-27 18:46:40,471 | INFO | enter to save_to_json
+2026-05-27 18:46:40,473 | INFO | enter to load_from_json
+2026-05-27 18:49:14,723 | INFO | enter to load_from_json
+2026-05-27 18:49:14,723 | INFO | enter to create shape
+2026-05-27 18:49:14,723 | INFO | enter to load_from_json
+2026-05-27 18:49:38,802 | INFO | enter to save_to_json
+2026-05-27 18:49:38,802 | INFO | enter to get area of circle 
+2026-05-27 18:49:38,802 | INFO | enter to get perimetr of circle 
+2026-05-27 18:49:38,803 | INFO | enter to load_from_json
+2026-05-27 18:50:27,998 | INFO | enter to load_from_json
+2026-05-27 18:50:27,998 | INFO | enter to create shape
+2026-05-27 18:50:27,998 | INFO | enter to load_from_json
+2026-05-27 18:50:30,823 | INFO | enter to save_to_json
+2026-05-27 18:50:30,824 | INFO | enter to load_from_json
+2026-05-27 18:51:45,726 | INFO | enter to load_from_json
+2026-05-27 18:51:45,726 | INFO | enter to create shape
+2026-05-27 18:51:45,726 | INFO | enter to load_from_json
+2026-05-27 18:51:47,969 | INFO | enter to save_to_json
+2026-05-27 18:51:47,970 | INFO | enter to get area of circle 
+2026-05-27 18:51:47,970 | INFO | enter to get perimetr of circle 
+2026-05-27 18:51:47,970 | INFO | enter to load_from_json
+2026-05-27 18:51:56,028 | INFO | enter to load_from_json
+2026-05-27 18:51:56,028 | INFO | enter to create shape
+2026-05-27 18:51:56,028 | INFO | enter to load_from_json
+2026-05-27 18:51:58,075 | INFO | enter to save_to_json
+2026-05-27 18:51:58,076 | INFO | enter to load_from_json
+2026-05-27 18:55:11,146 | INFO | enter to load_from_json
+2026-05-27 18:55:11,146 | INFO | enter to create shape
+2026-05-27 18:55:11,146 | INFO | enter to load_from_json
+2026-05-27 18:55:13,744 | INFO | enter to save_to_json
+2026-05-27 18:55:13,744 | INFO | enter to get area of circle 
+2026-05-27 18:55:13,744 | INFO | enter to get perimetr of circle 
+2026-05-27 18:55:13,745 | INFO | enter to load_from_json
+2026-05-27 18:55:16,875 | INFO | enter to load_from_json
+2026-05-27 18:55:16,875 | INFO | enter to create shape
+2026-05-27 18:55:16,875 | INFO | enter to load_from_json
+2026-05-27 18:55:18,891 | INFO | enter to save_to_json
+2026-05-27 18:55:18,892 | INFO | enter to load_from_json
+2026-05-27 18:55:55,473 | INFO | enter to load_from_json
+2026-05-27 18:55:55,473 | INFO | enter to create shape
+2026-05-27 18:55:55,473 | INFO | enter to load_from_json
+2026-05-27 18:56:04,214 | INFO | enter to save_to_json
+2026-05-27 18:56:04,214 | INFO | enter to get area of circle 
+2026-05-27 18:56:04,214 | INFO | enter to get perimetr of circle 
+2026-05-27 18:56:04,215 | INFO | enter to load_from_json
+2026-05-27 18:56:12,515 | INFO | enter to load_from_json
+2026-05-27 18:56:12,515 | INFO | enter to create shape
+2026-05-27 18:56:12,515 | INFO | enter to load_from_json
+2026-05-27 18:56:14,559 | INFO | enter to save_to_json
+2026-05-27 18:56:14,559 | INFO | enter to load_from_json
+2026-05-27 18:58:48,754 | INFO | enter to load_from_json
+2026-05-27 18:58:48,754 | INFO | enter to create shape
+2026-05-27 18:58:48,754 | INFO | enter to load_from_json
+2026-05-27 18:58:50,496 | INFO | enter to save_to_json
+2026-05-27 18:58:50,496 | INFO | enter to get area of circle 
+2026-05-27 18:58:50,496 | INFO | enter to get perimetr of circle 
+2026-05-27 18:58:50,497 | INFO | enter to load_from_json
+2026-05-27 18:59:01,374 | INFO | enter to load_from_json
+2026-05-27 18:59:01,374 | INFO | enter to create shape
+2026-05-27 18:59:08,164 | INFO | enter to load_from_json
+2026-05-27 18:59:43,361 | INFO | enter to save_to_json
+2026-05-27 18:59:43,362 | INFO | enter to load_from_json
+2026-05-27 19:03:51,058 | INFO | enter to load_from_json
+2026-05-27 19:03:51,059 | INFO | enter to create shape
+2026-05-27 19:03:51,059 | INFO | enter to load_from_json
+2026-05-27 19:03:53,414 | INFO | enter to save_to_json
+2026-05-27 19:03:53,414 | INFO | enter to get area of circle 
+2026-05-27 19:03:53,414 | INFO | enter to get perimetr of circle 
+2026-05-27 19:03:53,415 | INFO | enter to load_from_json
+2026-05-27 19:03:56,412 | INFO | enter to load_from_json
+2026-05-27 19:03:56,413 | INFO | enter to create shape
+2026-05-27 19:03:56,413 | INFO | enter to load_from_json
+2026-05-27 19:03:57,858 | INFO | enter to save_to_json
+2026-05-27 19:03:57,859 | INFO | enter to load_from_json
+2026-05-27 19:18:25,935 | INFO | enter to load_from_json
+2026-05-27 19:18:25,936 | INFO | enter to create shape
+2026-05-27 19:18:25,936 | INFO | enter to load_from_json
+2026-05-27 19:18:28,812 | INFO | enter to save_to_json
+2026-05-27 19:18:28,812 | INFO | enter to get area of circle 
+2026-05-27 19:18:28,812 | INFO | enter to get perimetr of circle 
+2026-05-27 19:18:28,813 | INFO | enter to load_from_json
+2026-05-27 19:18:31,732 | INFO | enter to load_from_json
+2026-05-27 19:18:31,732 | INFO | enter to create shape
+2026-05-27 19:18:31,732 | INFO | enter to load_from_json
+2026-05-27 19:18:33,446 | INFO | enter to save_to_json
+2026-05-27 19:18:33,446 | INFO | enter to get area of circle 
+2026-05-27 19:18:33,446 | INFO | enter to get perimetr of circle 
+2026-05-27 19:18:33,447 | INFO | enter to load_from_json
+2026-05-27 19:19:13,091 | INFO | enter to load_from_json
+2026-05-27 19:19:13,091 | INFO | enter to create shape
+2026-05-27 19:19:13,091 | INFO | enter to load_from_json
+2026-05-27 19:19:17,857 | INFO | enter to save_to_json
+2026-05-27 19:19:17,858 | INFO | enter to get area of rectangle 
+2026-05-27 19:19:17,858 | INFO | enter to get perimetr of rectangle
+2026-05-27 19:19:17,858 | INFO | enter to load_from_json
+2026-05-27 19:24:52,548 | INFO | enter to load_from_json
+2026-05-27 19:24:52,548 | INFO | enter to create shape
+2026-05-27 19:24:52,548 | INFO | enter to load_from_json
+2026-05-27 19:39:23,318 | INFO | enter to load_from_json
+2026-05-27 19:39:23,319 | INFO | enter to create shape
+2026-05-27 19:39:23,319 | INFO | enter to load_from_json
+2026-05-27 19:39:58,853 | INFO | enter to save_to_json
+2026-05-27 19:40:03,739 | INFO | enter to get area of rectangle 
+2026-05-27 19:40:05,394 | INFO | enter to get perimetr of rectangle
+2026-05-27 19:40:19,629 | INFO | enter to load_from_json
+2026-05-27 19:40:27,891 | INFO | enter to load_from_json
+2026-05-27 19:40:27,892 | INFO | enter to create shape
+2026-05-27 19:40:27,892 | INFO | enter to load_from_json
+2026-05-27 20:26:46,754 | INFO | enter to load_from_json
+2026-05-27 20:26:46,755 | INFO | enter to create shape
+2026-05-27 20:26:46,755 | INFO | enter to load_from_json
+2026-05-27 20:27:40,683 | INFO | enter to load_from_json
+2026-05-27 20:27:40,683 | INFO | enter to create shape
+2026-05-27 20:27:40,684 | INFO | enter to load_from_json
+2026-05-27 20:28:15,753 | INFO | enter to load_from_json
+2026-05-27 20:28:15,753 | INFO | enter to create shape
+2026-05-27 20:28:15,753 | INFO | enter to load_from_json
+2026-05-27 20:28:19,471 | INFO | enter to save_to_json
+2026-05-27 20:28:19,472 | INFO | enter to get area of rectangle 
+2026-05-27 20:28:19,472 | INFO | enter to get perimetr of rectangle
+2026-05-27 20:28:19,473 | INFO | enter to load_from_json
+2026-05-27 20:29:00,812 | INFO | enter to load_from_json
+2026-05-27 20:29:00,813 | INFO | enter to create shape
+2026-05-27 20:29:00,813 | INFO | enter to load_from_json
+2026-05-27 20:29:54,577 | INFO | enter to save_to_json
+2026-05-27 20:30:27,208 | INFO | enter to get area of rectangle 
+2026-05-27 20:30:27,824 | INFO | enter to get perimetr of rectangle
+2026-05-27 20:31:25,657 | INFO | enter to load_from_json
+2026-05-27 20:31:25,659 | INFO | enter to create shape
+2026-05-27 20:31:25,659 | INFO | enter to load_from_json
+2026-05-27 20:32:02,952 | INFO | enter to load_from_json
+2026-05-27 20:32:02,953 | INFO | enter to create shape
+2026-05-27 20:32:02,953 | INFO | enter to load_from_json
+2026-05-27 20:32:07,032 | INFO | enter to save_to_json
+2026-05-27 20:32:07,032 | INFO | enter to get area of rectangle 
+2026-05-27 20:32:07,033 | INFO | enter to get perimetr of rectangle
+2026-05-27 20:32:07,033 | INFO | enter to load_from_json
+2026-05-27 20:32:30,569 | INFO | enter to load_from_json
+2026-05-27 20:32:30,570 | INFO | enter to create shape
+2026-05-27 20:32:30,570 | INFO | enter to load_from_json
+2026-05-27 20:32:35,569 | INFO | enter to save_to_json
+2026-05-27 20:32:35,570 | INFO | enter to get area of rectangle 
+2026-05-27 20:32:35,570 | INFO | enter to get perimetr of rectangle
+2026-05-27 20:32:35,570 | INFO | enter to create shape
+2026-05-27 20:32:35,570 | INFO | enter to load_from_json
+2026-05-27 20:32:45,077 | INFO | enter to save_to_json
+2026-05-27 20:32:45,078 | INFO | enter to get area of circle 
+2026-05-27 20:32:45,078 | INFO | enter to get perimetr of circle 
+2026-05-27 20:32:45,079 | INFO | enter to load_from_json
+2026-05-27 20:32:55,595 | INFO | enter to load_from_json
+2026-05-27 20:32:55,595 | INFO | enter to create shape
+2026-05-27 20:32:55,595 | INFO | enter to load_from_json
+2026-05-27 20:32:59,999 | INFO | enter to save_to_json
+2026-05-27 20:33:00,000 | INFO | enter to get area of rectangle 
+2026-05-27 20:33:00,000 | INFO | enter to get perimetr of rectangle
+2026-05-27 20:33:00,000 | INFO | enter to create shape
+2026-05-27 20:33:00,000 | INFO | enter to load_from_json
+2026-05-27 20:33:03,026 | INFO | enter to save_to_json
+2026-05-27 20:33:03,027 | INFO | enter to get area of circle 
+2026-05-27 20:33:03,027 | INFO | enter to get perimetr of circle 
+2026-05-27 20:33:03,028 | INFO | enter to load_from_json
+2026-05-27 20:34:44,361 | INFO | enter to load_from_json
+2026-05-27 20:34:44,362 | INFO | enter to create shape
+2026-05-27 20:34:44,363 | INFO | enter to load_from_json
+2026-05-27 20:35:51,246 | INFO | enter to load_from_json
+2026-05-27 20:35:51,246 | INFO | enter to create shape
+2026-05-27 20:35:51,246 | INFO | enter to load_from_json
+2026-05-27 20:35:55,912 | INFO | enter to save_to_json
+2026-05-27 20:35:55,912 | INFO | enter to get area of rectangle 
+2026-05-27 20:35:55,913 | INFO | enter to get perimetr of rectangle
+2026-05-27 20:35:55,913 | INFO | enter to create shape
+2026-05-27 20:35:55,913 | INFO | enter to load_from_json
+2026-05-27 20:36:00,162 | INFO | enter to save_to_json
+2026-05-27 20:36:00,163 | INFO | enter to get area of circle 
+2026-05-27 20:36:00,163 | INFO | enter to get perimetr of circle 
+2026-05-27 20:36:00,163 | INFO | enter to load_from_json
+2026-05-27 20:36:08,032 | INFO | enter to load_from_json
+2026-05-27 20:36:08,033 | INFO | enter to create shape
+2026-05-27 20:36:08,033 | INFO | enter to load_from_json
+2026-05-27 20:36:12,904 | INFO | enter to save_to_json
+2026-05-27 20:36:12,905 | INFO | enter to get area of rectangle 
+2026-05-27 20:36:12,905 | INFO | enter to get perimetr of rectangle
+2026-05-27 20:36:12,905 | INFO | enter to create shape
+2026-05-27 20:36:12,905 | INFO | enter to load_from_json
+2026-05-27 20:36:15,883 | INFO | enter to save_to_json
+2026-05-27 20:36:15,884 | INFO | enter to get area of circle 
+2026-05-27 20:36:15,884 | INFO | enter to get perimetr of circle 
+2026-05-27 20:36:15,884 | INFO | enter to load_from_json
+2026-05-27 20:44:42,544 | INFO | enter to load_from_json
+2026-05-27 20:44:42,545 | INFO | enter to create shape
+2026-05-27 20:44:42,545 | INFO | enter to load_from_json
+2026-05-27 20:44:45,018 | INFO | enter to get area of rectangle 
+2026-05-27 20:44:45,018 | INFO | enter to get perimetr of rectangle
+2026-05-27 20:44:45,018 | INFO | enter to save_to_json
+2026-05-27 20:44:45,019 | INFO | enter to create shape
+2026-05-27 20:44:45,019 | INFO | enter to load_from_json
+2026-05-27 20:44:47,037 | INFO | enter to get area of circle 
+2026-05-27 20:44:47,038 | INFO | enter to get perimetr of circle 
+2026-05-27 20:44:47,038 | INFO | enter to save_to_json
+2026-05-27 20:44:47,039 | INFO | enter to load_from_json
+2026-05-27 20:44:52,252 | INFO | enter to load_from_json
+2026-05-27 20:44:52,252 | INFO | enter to create shape
+2026-05-27 20:44:52,252 | INFO | enter to load_from_json
+2026-05-27 20:44:54,503 | INFO | enter to get area of rectangle 
+2026-05-27 20:44:54,504 | INFO | enter to get perimetr of rectangle
+2026-05-27 20:44:54,504 | INFO | enter to save_to_json
+2026-05-27 20:44:54,504 | INFO | enter to create shape
+2026-05-27 20:44:54,505 | INFO | enter to load_from_json
+2026-05-27 20:44:55,299 | INFO | enter to get area of circle 
+2026-05-27 20:44:55,300 | INFO | enter to get perimetr of circle 
+2026-05-27 20:44:55,300 | INFO | enter to save_to_json
+2026-05-27 20:44:55,301 | INFO | enter to load_from_json
+2026-05-27 21:13:31,478 | INFO | enter to load_from_json
+2026-05-27 21:13:31,479 | INFO | enter to create shape
+2026-05-27 21:13:31,479 | INFO | enter to load_from_json
+2026-05-27 21:18:30,840 | INFO | enter to load_from_json
+2026-05-27 21:18:30,842 | INFO | enter to create shape
+2026-05-27 21:18:30,842 | INFO | enter to load_from_json
+2026-05-27 21:19:05,920 | INFO | enter to save_to_json
+2026-05-27 21:20:01,733 | INFO | enter to load_from_json
+2026-05-27 21:20:01,735 | INFO | enter to create shape
+2026-05-27 21:20:01,735 | INFO | enter to load_from_json
+2026-05-27 21:20:38,618 | INFO | enter to load_from_json
+2026-05-27 21:20:38,620 | INFO | enter to create shape
+2026-05-27 21:20:38,620 | INFO | enter to load_from_json
+2026-05-27 21:21:30,556 | INFO | enter to load_from_json
+2026-05-27 21:21:30,558 | INFO | enter to create shape
+2026-05-27 21:22:14,036 | INFO | enter to load_from_json
+2026-05-27 21:22:14,038 | INFO | enter to create shape
+2026-05-27 21:22:31,668 | INFO | enter to load_from_json
+2026-05-27 21:22:31,670 | INFO | enter to create shape
+2026-05-27 21:22:43,050 | INFO | enter to load_from_json
+2026-05-27 21:22:43,053 | INFO | enter to create shape
+2026-05-27 21:22:56,292 | INFO | enter to load_from_json
+2026-05-27 21:23:12,588 | INFO | enter to load_from_json
+2026-05-27 21:23:19,103 | INFO | enter to load_from_json
+2026-05-27 21:23:19,104 | INFO | enter to create shape
+2026-05-27 21:23:25,228 | INFO | enter to load_from_json
+2026-05-27 21:24:30,138 | INFO | enter to load_from_json
+2026-05-27 21:24:30,140 | INFO | enter to create shape
+2026-05-27 21:25:01,970 | INFO | enter to load_from_json
+2026-05-27 21:25:01,972 | INFO | enter to create shape
+2026-05-27 21:25:47,622 | INFO | enter to load_from_json
+2026-05-27 21:25:47,623 | INFO | enter to create shape
+2026-05-27 21:25:47,623 | INFO | enter to load_from_json
+2026-05-27 21:25:56,133 | INFO | enter to save_to_json
+2026-05-27 21:25:56,134 | INFO | enter to get area of rectangle 
+2026-05-27 21:25:56,134 | INFO | enter to get perimetr of rectangle
+2026-05-27 21:25:56,134 | INFO | enter to create shape
+2026-05-27 21:25:56,134 | INFO | enter to load_from_json
+2026-05-27 21:26:06,721 | INFO | enter to save_to_json
+2026-05-27 21:26:06,722 | INFO | enter to get area of circle 
+2026-05-27 21:26:06,722 | INFO | enter to get perimetr of circle 
+2026-05-27 21:26:06,722 | INFO | enter to load_from_json
+2026-05-27 21:26:36,397 | INFO | enter to load_from_json
+2026-05-27 21:26:36,398 | INFO | enter to create shape
+2026-05-27 21:26:36,398 | INFO | enter to load_from_json
+2026-05-27 21:26:40,721 | INFO | enter to save_to_json
+2026-05-27 21:26:40,722 | INFO | enter to get area of rectangle 
+2026-05-27 21:26:40,722 | INFO | enter to get perimetr of rectangle
+2026-05-27 21:26:40,723 | INFO | enter to create shape
+2026-05-27 21:26:40,723 | INFO | enter to load_from_json
+2026-05-27 21:26:42,514 | INFO | enter to save_to_json
+2026-05-27 21:26:42,515 | INFO | enter to get area of circle 
+2026-05-27 21:26:42,515 | INFO | enter to get perimetr of circle 
+2026-05-27 21:26:42,516 | INFO | enter to load_from_json
+2026-05-27 21:27:06,650 | INFO | enter to load_from_json
+2026-05-27 21:27:06,651 | INFO | enter to create shape
+2026-05-27 21:27:22,896 | INFO | enter to load_from_json
+2026-05-27 21:29:58,460 | INFO | enter to load_from_json
+2026-05-27 21:29:58,462 | INFO | enter to create shape
+2026-05-27 21:30:00,654 | INFO | enter to load_from_json
+2026-05-27 21:32:12,381 | INFO | enter to load_from_json
+2026-05-27 21:32:12,383 | INFO | enter to create shape
+2026-05-27 21:32:12,383 | INFO | enter to load_from_json
+2026-05-27 21:34:19,656 | INFO | enter to load_from_json
+2026-05-27 21:34:19,656 | INFO | enter to create shape
+2026-05-27 21:34:19,656 | INFO | enter to load_from_json
+2026-05-27 21:34:38,925 | INFO | enter to load_from_json
+2026-05-27 21:34:38,925 | INFO | enter to create shape
+2026-05-27 21:34:38,925 | INFO | enter to load_from_json
+2026-05-27 21:34:42,067 | INFO | enter to save_to_json
+2026-05-27 21:34:42,068 | INFO | enter to get area of rectangle 
+2026-05-27 21:34:42,068 | INFO | enter to get perimetr of rectangle
+2026-05-27 21:34:42,069 | INFO | enter to create shape
+2026-05-27 21:34:42,069 | INFO | enter to load_from_json
+2026-05-27 21:34:46,692 | INFO | enter to save_to_json
+2026-05-27 21:34:46,693 | INFO | enter to get area of circle 
+2026-05-27 21:34:46,693 | INFO | enter to get perimetr of circle 
+2026-05-27 21:34:46,693 | INFO | enter to load_from_json
+2026-05-27 21:36:15,466 | INFO | enter to load_from_json
+2026-05-27 21:36:15,466 | INFO | enter to create shape
+2026-05-27 21:36:15,466 | INFO | enter to load_from_json
+2026-05-27 21:36:19,645 | INFO | enter to save_to_json
+2026-05-27 21:36:19,646 | INFO | enter to get area of rectangle 
+2026-05-27 21:36:19,646 | INFO | enter to get perimetr of rectangle
+2026-05-27 21:36:19,647 | INFO | enter to create shape
+2026-05-27 21:36:19,647 | INFO | enter to load_from_json
+2026-05-27 21:36:21,167 | INFO | enter to save_to_json
+2026-05-27 21:36:21,167 | INFO | enter to get area of circle 
+2026-05-27 21:36:21,168 | INFO | enter to get perimetr of circle 
+2026-05-27 21:36:21,168 | INFO | enter to load_from_json

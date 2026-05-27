@@ -11,8 +11,8 @@ class Shape:
         :param shape_type: type of shpape to initilaize
         """
         logger.debug("enter to Shape class")
-        Shape.counter += 1
-        self.id = Shape.counter
+        # Shape.counter += 1
+        self.id = shape_id
         self.shape_type = shape_type
     def get_area(self):
         """

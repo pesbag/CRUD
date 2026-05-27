@@ -21,13 +21,21 @@ class Circle(Shape):
         :return: the area of the circle
         """
         logger.info("enter to get area of circle ")
-        return (self._radius**2)*pi
+        return round((self._radius**2)*pi,3)
     def get_perimeter(self):
         """
         :return: the perimeter of the circle
         """
         logger.info("enter to get perimetr of circle ")
-        return 2*pi*self._radius
+        return round(2*pi*self._radius,3)
+
+    def to_dict(self):
+        """
+        convert the data to dictionary
+        :return: dictionary of the data
+        """
+        logger.debug("enter to to_dict of Shape")
+        return {"shape_id": self.id, "shape_type": self.shape_type,"radius":self._radius,"area":self.get_area(),"perimeter":self.get_perimeter()}
 
 def main():
     s1=Circle(5,3)

@@ -22,14 +22,23 @@ class Rectangle(Shape):
         :return: the perimeter rectangle
         """
         logger.info("enter to get perimetr of rectangle")
-        return 2*self._width+2*self._length
+        return round(2*self._width+2*self._length,3)
 
     def get_area(self):
         """
         :return: the area of triangle
         """
         logger.info("enter to get area of rectangle ")
-        return self._length*self._width
+        return round(self._length*self._width,3)
+
+    def to_dict(self):
+        """
+        convert the data to dictionary
+        :return: dictionary of the data
+        """
+        logger.debug("enter to to_dict of Shape")
+        return {"shape_id": self.id, "shape_type": self.shape_type,"width":self._width,"length":self._length
+            ,"area":self.get_area(),"perimeter":self.get_perimeter()}
 
 def main():
     s1=Rectangle(3,7,6)

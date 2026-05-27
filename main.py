@@ -17,6 +17,12 @@ def main():
         add_shape()
     if choice=="2":
         shape_manager.get_all_shapes(self)
+    if choice=="3":
+        shape_manager.
+    if choice == "4":
+
+    if choice == "5":
+        exit()
 
 if __name__ == '__main__':
     main()

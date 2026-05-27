@@ -20,14 +20,23 @@ class Square(Shape):
         :return: the area of the square
         """
         logger.info("enter to get area of square ")
-        return self._side**2
+        return round(self._side**2,3)
 
     def get_perimeter(self):
         """
         :return: the perimeter of the square
         """
         logger.info("enter to get perimetr of square")
-        return 4*self._side
+        return round(self._side * 4, 3)
+
+    def to_dict(self):
+        """
+        convert the data to dictionary
+        :return: dictionary of the data
+        """
+        logger.debug("enter to to_dict of Shape")
+        return {"shape_id": self.id, "shape_type": self.shape_type,"side":self._side,
+                "area":self.get_area(),"perimeter":self.get_perimeter()}
     # def get_params(self):
     #     side = input("please enter side of square")
     #     try:

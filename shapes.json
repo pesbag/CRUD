@@ -1,29 +1,62 @@
 [
     {
-        "id": 1,
+        "shape_id": 1,
         "shape_type": "rectangle",
-        "_length": 4,
-        "_width": 4
+        "width": 4,
+        "length": 9,
+        "area": 36,
+        "perimeter": 26
     },
     {
-        "id": 2,
+        "shape_id": 2,
         "shape_type": "circle",
-        "_radius": 3
+        "radius": 6,
+        "area": 113.097,
+        "perimeter": 37.699
     },
     {
-        "id": 1,
+        "shape_id": 1,
         "shape_type": "rectangle",
-        "_length": 1,
-        "_width": 1
+        "width": 3,
+        "length": 9,
+        "area": 27,
+        "perimeter": 24
     },
     {
-        "id": 2,
+        "shape_id": 2,
         "shape_type": "circle",
-        "_radius": 6
+        "radius": 2,
+        "area": 12.566,
+        "perimeter": 12.566
     },
     {
-        "id": 1,
+        "shape_id": 3,
+        "shape_type": "rectangle",
+        "width": 4,
+        "length": 2,
+        "area": 8,
+        "perimeter": 12
+    },
+    {
+        "shape_id": 4,
         "shape_type": "circle",
-        "_radius": 7
+        "radius": 3,
+        "area": 28.274,
+        "perimeter": 18.85
+    },
+    {
+        "shape_id": 5,
+        "shape_type": "rectangle",
+        "width": 8,
+        "length": 3,
+        "area": 24,
+        "perimeter": 22
+    },
+    {
+        "shape_id": 6,
+        "shape_type": "circle",
+        "radius": 2,
+        "area": 12.566,
+        "perimeter": 12.566
     }
 ]

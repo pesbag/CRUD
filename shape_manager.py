@@ -20,13 +20,21 @@ class ShapeManager:
         self.shapes = []
         self.load_from_json()
 
-    def convert_from_obj_to_dict(self,obj):
-        return obj.__dict__
+    # def convert_from_obj_to_dict(self,obj):
+    #     return obj.__dict__
 
     def find_id_to_shape(self,all_data):
         if not all_data:
             return 1
-        return max([shape["id"] for shape in all_data]) + 1
+        # max_s = all_data[0]["shape_id"]
+        # for shape in range(1,len(all_data)):
+        #     temp=all_data[shape]["shape_id"]
+        #     if temp>max_s:
+        #         max_s=all_data[shape]["shape_id"]
+        # return max_s+1
+        new_id=max([shape["shape_id"] for shape in all_data]) + 1
+        return new_id
+        # return max([shape["shape_id"] for shape in all_data]) + 1
 
     def get_rectangle(self):
         width = input("please enter width of rectangle")
@@ -66,10 +74,11 @@ class ShapeManager:
         self.shapes = self.load_from_json()
         target_type=shapes_dict[shape]
         shape_params_func=target_type["input_func"]()
-        shape_id = self.find_id_to_shape(self.shapes)
-        new_shape_object=target_type["class"](shape_id,**shape_params_func)
-        obj_dict=self.convert_from_obj_to_dict(new_shape_object)
-        self.shapes.append(obj_dict)
+        new_shape_id = self.find_id_to_shape(self.shapes)
+        new_shape_object=target_type["class"](new_shape_id,**shape_params_func)
+        # obj_dict=self.convert_from_obj_to_dict(new_shape_object)
+        # self.shapes.append(obj_dict)
+        self.shapes.append(new_shape_object)
         self.save_to_json()
         # print(self.shapes)
 
@@ -90,6 +99,17 @@ class ShapeManager:
         :return:
         """
         logger.info("enter to update shape")
+
+        # self.shapes = self.load_from_json()
+        # for shape in self.shapes:
+        #     if shape["shape_id"] == shape_id:
+        #         for key, value in new_data.items():
+        #             if key in shape:
+        #                 shape[key] = value
+        #         self.save_to_json()
+        #         print(f"Shape {shape_id} updated successfully!")
+        #         return
+        print(f"Error: shape with id {shape_id} not found")
         pass
 
     def delete_shape(self, shape_id):
@@ -99,7 +119,8 @@ class ShapeManager:
         :return:
         """
         logger.info("enter to delete shape")
-        pass
+        self.shapes=[s for s in self.shapes if s.shape_id!=shape_id]
+
 
     def save_to_json(self):
         """
@@ -113,7 +134,9 @@ class ShapeManager:
         # existing_data.append(shape_dict)
         try:
             with open("shapes.json","w",encoding="utf-8") as f:
-                json.dump(self.shapes, f, indent=4, ensure_ascii=False)
+                dict_shapes = [s if isinstance(s, dict) else s.to_dict() for s in self.shapes]
+                # self.shapes=dict_shapes
+                json.dump(dict_shapes, f, indent=4, ensure_ascii=False)
                 print("Success to save the shape!")
         except Exception as e:
             print(f"Error: failed to write to file: {e}")
@@ -136,7 +159,7 @@ class ShapeManager:
         return data
 def main():
     c=ShapeManager()
-    # print(c.create_shape("rectangle"))
+    print(c.create_shape("rectangle"))
     print(c.create_shape("circle"))
     c.get_all_shapes()
 if __name__ == '__main__':
