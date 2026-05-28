@@ -13,7 +13,7 @@ class Rectangle(Shape):
         :param length: length of bais
         :param width: length of second bais
         """""
-        logger.debug("enter to Rectangle class")
+        logger.debug("enter to init of Rectangle class")
         super().__init__(shape_id,shape_type)
         self._length=length
         self._width=width
@@ -36,7 +36,7 @@ class Rectangle(Shape):
         convert the data to dictionary
         :return: dictionary of the data
         """
-        logger.debug("enter to to_dict of Shape")
+        logger.info("enter to to_dict of Shape")
         return {"shape_id": self.id, "shape_type": self.shape_type,"width":self._width,"length":self._length
             ,"area":self.get_area(),"perimeter":self.get_perimeter()}
 

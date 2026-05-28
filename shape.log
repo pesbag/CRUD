@@ -545,3 +545,200 @@
 2026-05-28 08:24:34,387 | INFO | enter to delete shape
 2026-05-28 08:24:34,387 | INFO | enter to load_from_json
 2026-05-28 08:24:34,387 | INFO | enter to save_to_json
+2026-05-28 10:28:04,474 | INFO | enter to load_from_json
+2026-05-28 10:28:04,475 | ERROR | Error: cannot read the json file
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\shape_manager.py", line 167, in load_from_json
+    data=json.load(f)
+  File "C:\Users\bgdps\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+        cls=cls, object_hook=object_hook,
+        parse_float=parse_float, parse_int=parse_int,
+        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "C:\Users\bgdps\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\bgdps\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bgdps\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2026-05-28 10:28:26,027 | INFO | enter to load_from_json
+2026-05-28 10:28:26,028 | ERROR | Error: cannot read the json file
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\shape_manager.py", line 167, in load_from_json
+    data=json.load(f)
+  File "C:\Users\bgdps\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+        cls=cls, object_hook=object_hook,
+        parse_float=parse_float, parse_int=parse_int,
+        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "C:\Users\bgdps\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\bgdps\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bgdps\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2026-05-28 10:29:46,081 | INFO | enter to load_from_json
+2026-05-28 10:29:46,081 | ERROR | Error: cannot read the json file
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\shape_manager.py", line 166, in load_from_json
+    data=json.load(f)
+  File "C:\Users\bgdps\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+        cls=cls, object_hook=object_hook,
+        parse_float=parse_float, parse_int=parse_int,
+        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "C:\Users\bgdps\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\bgdps\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bgdps\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2026-05-28 10:29:46,087 | INFO | enter to create shape
+2026-05-28 10:29:46,087 | INFO | enter to load_from_json
+2026-05-28 10:29:46,087 | ERROR | Error: cannot read the json file
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\shape_manager.py", line 166, in load_from_json
+    data=json.load(f)
+  File "C:\Users\bgdps\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 293, in load
+    return loads(fp.read(),
+        cls=cls, object_hook=object_hook,
+        parse_float=parse_float, parse_int=parse_int,
+        parse_constant=parse_constant, object_pairs_hook=object_pairs_hook, **kw)
+  File "C:\Users\bgdps\AppData\Local\Programs\Python\Python313\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Users\bgdps\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\bgdps\AppData\Local\Programs\Python\Python313\Lib\json\decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2026-05-28 10:29:46,088 | INFO | loaded the json file to shapes list
+2026-05-28 10:30:33,442 | INFO | enter to load_from_json
+2026-05-28 10:30:33,443 | INFO | enter to create shape
+2026-05-28 10:30:33,443 | INFO | enter to load_from_json
+2026-05-28 10:30:33,443 | INFO | loaded the json file to shapes list
+2026-05-28 10:30:36,763 | INFO | enter to load_from_json
+2026-05-28 10:30:36,764 | INFO | enter to create shape
+2026-05-28 10:30:36,764 | INFO | enter to load_from_json
+2026-05-28 10:30:36,765 | INFO | loaded the json file to shapes list
+2026-05-28 10:30:59,743 | INFO | enter to load_from_json
+2026-05-28 10:30:59,743 | ERROR | Error: cannot read the json file
+2026-05-28 10:30:59,743 | INFO | enter to create shape
+2026-05-28 10:30:59,743 | INFO | enter to load_from_json
+2026-05-28 10:30:59,744 | ERROR | Error: cannot read the json file
+2026-05-28 10:30:59,744 | INFO | loaded the json file to shapes list
+2026-05-28 10:31:12,546 | INFO | enter to load_from_json
+2026-05-28 10:31:12,546 | INFO | Error: cannot read the json file
+2026-05-28 10:31:12,546 | INFO | enter to create shape
+2026-05-28 10:31:12,546 | INFO | enter to load_from_json
+2026-05-28 10:31:12,546 | INFO | Error: cannot read the json file
+2026-05-28 10:31:12,546 | INFO | loaded the json file to shapes list
+2026-05-28 10:33:01,176 | INFO | get to find_id_to_shape function
+2026-05-28 10:33:01,176 | INFO | there is no shapes so define the first shape new id to 1
+2026-05-28 10:33:01,176 | INFO | add the new object to the objects list
+2026-05-28 10:33:01,177 | INFO | enter to save_to_json
+2026-05-28 10:33:01,177 | INFO | enter to get area of circle 
+2026-05-28 10:33:01,177 | INFO | enter to get perimetr of circle 
+2026-05-28 10:33:01,177 | INFO | Success to update json file
+2026-05-28 10:33:01,178 | INFO | save it to json file
+2026-05-28 10:33:01,178 | INFO | enter to load_from_json
+2026-05-28 10:33:01,178 | INFO | load the shapes from json file
+2026-05-28 10:33:16,412 | INFO | enter to load_from_json
+2026-05-28 10:33:16,413 | INFO | enter to create shape
+2026-05-28 10:33:16,413 | INFO | enter to load_from_json
+2026-05-28 10:33:16,413 | INFO | loaded the json file to shapes list
+2026-05-28 10:33:18,919 | INFO | get to find_id_to_shape function
+2026-05-28 10:33:18,919 | INFO | find new id for shape
+2026-05-28 10:33:18,919 | INFO | add the new object to the objects list
+2026-05-28 10:33:18,919 | INFO | enter to save_to_json
+2026-05-28 10:33:18,919 | INFO | enter to get area of circle 
+2026-05-28 10:33:18,919 | INFO | enter to get perimetr of circle 
+2026-05-28 10:33:18,919 | INFO | Success to update json file
+2026-05-28 10:33:18,920 | INFO | save it to json file
+2026-05-28 10:33:18,920 | INFO | enter to load_from_json
+2026-05-28 10:33:18,920 | INFO | load the shapes from json file
+2026-05-28 10:49:01,119 | INFO | enter to load_from_json
+2026-05-28 10:49:01,119 | INFO | enter to load_from_json
+2026-05-28 10:49:01,120 | INFO | load the shapes from json file
+2026-05-28 10:49:07,175 | INFO | enter to load_from_json
+2026-05-28 10:49:44,919 | INFO | enter to delete shape
+2026-05-28 10:49:44,919 | INFO | enter to load_from_json
+2026-05-28 10:49:44,919 | INFO | create new list which not include the id remove
+2026-05-28 10:49:44,919 | INFO | enter to save_to_json
+2026-05-28 10:49:44,920 | INFO | Success to update json file
+2026-05-28 11:06:49,595 | INFO | check the validation of the user input
+2026-05-28 11:06:49,596 | INFO | enter to load_from_json
+2026-05-28 11:06:54,452 | INFO | check the validation of the user input
+2026-05-28 11:06:54,453 | INFO | enter to load_from_json
+2026-05-28 11:07:12,179 | INFO | check the validation of the user input
+2026-05-28 11:07:12,180 | INFO | enter to load_from_json
+2026-05-28 11:07:12,180 | INFO | enter to load_from_json
+2026-05-28 11:07:12,180 | INFO | load the shapes from json file
+2026-05-28 11:07:47,764 | INFO | check the validation of the user input
+2026-05-28 11:07:47,765 | INFO | enter to load_from_json
+2026-05-28 11:08:37,852 | INFO | check the validation of the user input
+2026-05-28 11:08:37,853 | INFO | enter to load_from_json
+2026-05-28 11:08:42,967 | INFO | enter to create shape
+2026-05-28 11:08:42,967 | INFO | enter to load_from_json
+2026-05-28 11:08:42,967 | INFO | loaded the json file to shapes list
+2026-05-28 11:08:42,968 | ERROR | Error shape class k;ll was not found
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\shape_manager.py", line 77, in create_shape
+    target_type=shapes_dict[shape]
+                ~~~~~~~~~~~^^^^^^^
+KeyError: 'k;ll'
+2026-05-28 11:09:18,705 | INFO | check the validation of the user input
+2026-05-28 11:09:18,706 | INFO | enter to load_from_json
+2026-05-28 11:09:23,091 | INFO | enter to create shape
+2026-05-28 11:09:23,092 | INFO | enter to load_from_json
+2026-05-28 11:09:23,092 | INFO | loaded the json file to shapes list
+2026-05-28 11:09:32,475 | ERROR | Error shape class kljj was not found
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\shape_manager.py", line 77, in create_shape
+    target_type=shapes_dict[shape]
+                ~~~~~~~~~~~^^^^^^^
+KeyError: 'kljj'
+2026-05-28 11:09:55,068 | INFO | check the validation of the user input
+2026-05-28 11:09:55,069 | INFO | enter to load_from_json
+2026-05-28 11:11:09,441 | INFO | check the validation of the user input
+2026-05-28 11:11:09,443 | INFO | enter to load_from_json
+2026-05-28 11:12:02,834 | INFO | check the validation of the user input
+2026-05-28 11:12:02,835 | INFO | enter to load_from_json
+2026-05-28 11:13:51,806 | INFO | enter to create shape
+2026-05-28 11:13:55,631 | INFO | enter to load_from_json
+2026-05-28 11:13:58,456 | INFO | loaded the json file to shapes list
+2026-05-28 11:14:00,775 | ERROR | Error shape class kkk was not found
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\shape_manager.py", line 77, in create_shape
+    target_type=shapes_dict[shape]
+                ~~~~~~~~~~~^^^^^^^
+KeyError: 'kkk'
+2026-05-28 11:15:19,092 | INFO | check the validation of the user input
+2026-05-28 11:15:19,092 | INFO | enter to load_from_json
+2026-05-28 11:15:23,114 | ERROR | Error the value should contain only characters 
+NoneType: None
+2026-05-28 11:20:15,527 | INFO | check the validation of the user input
+2026-05-28 11:20:15,527 | INFO | enter to load_from_json
+2026-05-28 11:20:18,074 | ERROR | Error: the id shape to remove should be a positive integer
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\main.py", line 71, in delete_shapes
+    shape_id=int(input("please enter shape id to remove"))
+ValueError: invalid literal for int() with base 10: 'd'
+2026-05-28 11:20:18,080 | ERROR | Error: the id shape to remove should be a positive integer
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\main.py", line 95, in main
+    delete_shapes(shape_manage)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\main.py", line 71, in delete_shapes
+    shape_id=int(input("please enter shape id to remove"))
+ValueError: invalid literal for int() with base 10: 'd'

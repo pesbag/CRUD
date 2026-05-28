@@ -3,17 +3,16 @@ import logging
 logger=logging.getLogger('shape')
 
 class Shape:
-    counter = 0
     def __init__(self, shape_id, shape_type):
         """
         initial the generic shape
         :param shape_id: shape id
-        :param shape_type: type of shpape to initilaize
+        :param shape_type: type of shapse to initilaize
         """
-        logger.debug("enter to Shape class")
-        # Shape.counter += 1
+        logger.debug("enter to  init of Shape class")
         self.id = shape_id
         self.shape_type = shape_type
+
     def get_area(self):
         """
         get the area of generic shape
@@ -37,7 +36,6 @@ class Shape:
         """
         logger.debug("enter to to_dict of Shape")
         return {"shape_id":self.id,"shape_type":self.shape_type}
-        # json.dump(self.)
 
     def get_params(self):
         """

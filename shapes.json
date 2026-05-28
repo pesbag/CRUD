@@ -1,32 +1,16 @@
 [
     {
         "shape_id": 1,
-        "shape_type": "rectangle",
-        "width": 4,
-        "length": 9,
-        "area": 36,
-        "perimeter": 26
+        "shape_type": "circle",
+        "radius": 5,
+        "area": 78.54,
+        "perimeter": 31.416
     },
     {
         "shape_id": 2,
         "shape_type": "circle",
-        "radius": 6,
-        "area": 113.097,
-        "perimeter": 37.699
-    },
-    {
-        "shape_id": 1,
-        "shape_type": "rectangle",
-        "width": 3,
-        "length": 9,
-        "area": 27,
-        "perimeter": 24
-    },
-    {
-        "shape_id": 2,
-        "shape_type": "circle",
-        "radius": 2,
-        "area": 12.566,
-        "perimeter": 12.566
+        "radius": 9,
+        "area": 254.469,
+        "perimeter": 56.549
     }
 ]
