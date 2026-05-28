@@ -12,5 +12,33 @@
         "radius": 9,
         "area": 254.469,
         "perimeter": 56.549
+    },
+    {
+        "shape_id": 3,
+        "shape_type": "circle",
+        "radius": 3,
+        "area": 28.274,
+        "perimeter": 18.85
+    },
+    {
+        "shape_id": 4,
+        "shape_type": "circle",
+        "radius": 2,
+        "area": 12.566,
+        "perimeter": 12.566
+    },
+    {
+        "shape_id": 5,
+        "shape_type": "circle",
+        "radius": 1,
+        "area": 3.142,
+        "perimeter": 6.283
+    },
+    {
+        "shape_id": 6,
+        "shape_type": "circle",
+        "radius": 5,
+        "area": 78.54,
+        "perimeter": 31.416
     }
 ]

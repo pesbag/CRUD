@@ -58,8 +58,9 @@ def get_shapes(shape_manage):
     """
     shape_manage.get_all_shapes()
 
-# def update_shape(shape_manage):
-#     shape_manage.
+def update_shapes(shape_manage):
+
+    shape_manage.update_shapes()
 
 def delete_shapes(shape_manage):
     """
@@ -88,8 +89,8 @@ def main():
                 logger.exception(f"Error: the shape you enterd is not apart of the shapes of the system")
         elif choice=="2":
             get_shapes(shape_manage)
-        # if choice=="3":
-        #     shape_manager.update_shape()
+        if choice=="3":
+            shape_manager.update_shapes()
         elif choice == "4":
             try:
                 delete_shapes(shape_manage)

@@ -34,8 +34,8 @@ class ShapeManager:
         return new_id
 
     def get_rectangle(self):
-        width = input("please enter width of rectangle")
-        length = input("please enter length of rectangle")
+        width = input("please enter width of rectangle\n")
+        length = input("please enter length of rectangle\n")
         try:
             return {"width": int(width), "length": int(length)}
         except ValueError:
@@ -43,7 +43,7 @@ class ShapeManager:
             raise
 
     def get_circle(self):
-        radius = input("please enter radius of circle")
+        radius = input("please enter radius of circle\n")
         try:
             return {"radius": int(radius)}
         except ValueError:
@@ -51,7 +51,7 @@ class ShapeManager:
             raise
 
     def get_square(self):
-        side = input("please enter side of square")
+        side = input("please enter side of square\n")
         try:
             return {"side": int(side)}
         except ValueError:
@@ -68,7 +68,6 @@ class ShapeManager:
         shapes_dict={"circle":{"class":Circle, "input_func":self.get_circle},
                      "square":{"class":Square,"input_func":self.get_square},
                    "rectangle":{"class":Rectangle,"input_func":self.get_rectangle}}
-
         # load to the list the exists objects for add them the new variables
         self.shapes = self.load_from_json()
         logger.info("loaded the json file to shapes list")
@@ -85,7 +84,9 @@ class ShapeManager:
         # create the new object needed including the uniq id and the relevant parameters
         new_shape_object=target_type["class"](new_shape_id,**shape_params_func)
         # add the new object to the objects list
+        # print(new_shape_object)
         self.shapes.append(new_shape_object)
+        # print(self.shapes)
         logger.info("add the new object to the objects list")
         # save it to json file
         self.save_to_json()
@@ -109,16 +110,15 @@ class ShapeManager:
         :return:
         """
         logger.info("enter to update shape")
-
-        # self.shapes = self.load_from_json()
-        # for shape in self.shapes:
-        #     if shape["shape_id"] == shape_id:
-        #         for key, value in new_data.items():
-        #             if key in shape:
-        #                 shape[key] = value
-        #         self.save_to_json()
-        #         print(f"Shape {shape_id} updated successfully!")
-        #         return
+        self.shapes = self.load_from_json()
+        for shape in self.shapes:
+            if shape["shape_id"] == shape_id:
+                for key, value in new_data.items():
+                    if key in shape:
+                        shape[key] = value
+                self.save_to_json()
+                print(f"Shape {shape_id} updated successfully!")
+                return
         print(f"Error: shape with id {shape_id} not found")
         pass
 
@@ -179,6 +179,6 @@ def main():
     # c.get_all_shapes()
     # c.delete_shape(3)
     # c.delete_shape(6)
-    c.get_all_shapes()
+    # c.get_all_shapes()
 if __name__ == '__main__':
     main()

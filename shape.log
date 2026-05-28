@@ -742,3 +742,90 @@ Traceback (most recent call last):
   File "C:\Users\bgdps\Documents\kodcode_projects\crud\main.py", line 71, in delete_shapes
     shape_id=int(input("please enter shape id to remove"))
 ValueError: invalid literal for int() with base 10: 'd'
+2026-05-28 11:38:23,311 | INFO | check the validation of the user input
+2026-05-28 11:38:23,312 | INFO | enter to load_from_json
+2026-05-28 12:27:25,934 | INFO | enter to load_from_json
+2026-05-28 12:27:25,934 | INFO | enter to create shape
+2026-05-28 12:27:25,934 | INFO | enter to load_from_json
+2026-05-28 12:27:25,934 | INFO | loaded the json file to shapes list
+2026-05-28 12:27:32,855 | INFO | get to find_id_to_shape function
+2026-05-28 12:27:32,856 | INFO | find new id for shape
+2026-05-28 12:27:32,856 | INFO | add the new object to the objects list
+2026-05-28 12:27:32,856 | INFO | enter to save_to_json
+2026-05-28 12:27:32,856 | INFO | enter to get area of circle 
+2026-05-28 12:27:32,857 | INFO | enter to get perimetr of circle 
+2026-05-28 12:27:32,857 | INFO | Success to update json file
+2026-05-28 12:27:32,857 | INFO | save it to json file
+2026-05-28 12:27:32,857 | INFO | enter to load_from_json
+2026-05-28 12:27:32,857 | INFO | load the shapes from json file
+2026-05-28 12:29:11,952 | INFO | enter to load_from_json
+2026-05-28 12:29:11,952 | INFO | enter to load_from_json
+2026-05-28 12:29:11,952 | INFO | load the shapes from json file
+2026-05-28 12:30:17,896 | INFO | enter to load_from_json
+2026-05-28 12:30:17,897 | INFO | enter to load_from_json
+2026-05-28 12:30:17,897 | INFO | load the shapes from json file
+2026-05-28 12:31:01,067 | INFO | enter to load_from_json
+2026-05-28 12:31:01,067 | INFO | enter to create shape
+2026-05-28 12:31:01,067 | INFO | enter to load_from_json
+2026-05-28 12:31:01,068 | INFO | loaded the json file to shapes list
+2026-05-28 12:31:10,325 | INFO | get to find_id_to_shape function
+2026-05-28 12:31:10,325 | INFO | find new id for shape
+2026-05-28 12:31:10,326 | INFO | add the new object to the objects list
+2026-05-28 12:31:10,326 | INFO | enter to save_to_json
+2026-05-28 12:31:10,326 | INFO | enter to get area of circle 
+2026-05-28 12:31:10,326 | INFO | enter to get perimetr of circle 
+2026-05-28 12:31:10,327 | INFO | Success to update json file
+2026-05-28 12:31:10,327 | INFO | save it to json file
+2026-05-28 12:31:10,327 | INFO | enter to load_from_json
+2026-05-28 12:31:10,328 | INFO | load the shapes from json file
+2026-05-28 12:32:41,737 | INFO | enter to load_from_json
+2026-05-28 12:32:41,738 | INFO | enter to create shape
+2026-05-28 12:32:41,738 | INFO | enter to load_from_json
+2026-05-28 12:32:41,738 | INFO | loaded the json file to shapes list
+2026-05-28 12:32:46,311 | INFO | get to find_id_to_shape function
+2026-05-28 12:32:46,311 | INFO | find new id for shape
+2026-05-28 12:32:46,311 | INFO | add the new object to the objects list
+2026-05-28 12:32:46,311 | INFO | enter to save_to_json
+2026-05-28 12:32:46,312 | INFO | enter to get area of circle 
+2026-05-28 12:32:46,312 | INFO | enter to get perimetr of circle 
+2026-05-28 12:32:46,312 | INFO | Success to update json file
+2026-05-28 12:32:46,312 | INFO | save it to json file
+2026-05-28 12:32:46,312 | INFO | enter to load_from_json
+2026-05-28 12:32:46,313 | INFO | load the shapes from json file
+2026-05-28 12:36:14,356 | INFO | enter to load_from_json
+2026-05-28 12:36:14,356 | INFO | enter to create shape
+2026-05-28 12:36:14,356 | INFO | enter to load_from_json
+2026-05-28 12:36:14,356 | INFO | loaded the json file to shapes list
+2026-05-28 12:43:14,650 | INFO | enter to load_from_json
+2026-05-28 12:43:14,651 | INFO | enter to create shape
+2026-05-28 12:43:14,651 | INFO | enter to load_from_json
+2026-05-28 12:43:14,651 | INFO | loaded the json file to shapes list
+2026-05-28 12:43:32,235 | INFO | enter to load_from_json
+2026-05-28 12:43:32,236 | INFO | enter to create shape
+2026-05-28 12:43:32,236 | INFO | enter to load_from_json
+2026-05-28 12:43:32,236 | INFO | loaded the json file to shapes list
+2026-05-28 12:45:15,991 | INFO | enter to load_from_json
+2026-05-28 12:45:15,991 | INFO | enter to create shape
+2026-05-28 12:45:15,991 | INFO | enter to load_from_json
+2026-05-28 12:45:15,991 | INFO | loaded the json file to shapes list
+2026-05-28 12:45:25,140 | INFO | check the validation of the user input
+2026-05-28 12:45:25,140 | INFO | enter to load_from_json
+2026-05-28 18:17:33,053 | INFO | enter to load_from_json
+2026-05-28 18:17:33,054 | INFO | enter to create shape
+2026-05-28 18:17:33,054 | INFO | enter to load_from_json
+2026-05-28 18:17:33,054 | INFO | loaded the json file to shapes list
+2026-05-28 18:18:12,369 | INFO | enter to load_from_json
+2026-05-28 18:18:12,370 | INFO | enter to load_from_json
+2026-05-28 18:18:12,370 | INFO | load the shapes from json file
+2026-05-28 18:19:44,313 | INFO | enter to load_from_json
+2026-05-28 18:19:44,314 | INFO | enter to create shape
+2026-05-28 18:19:44,314 | INFO | enter to load_from_json
+2026-05-28 18:19:44,314 | INFO | loaded the json file to shapes list
+2026-05-28 18:19:50,930 | INFO | get to find_id_to_shape function
+2026-05-28 18:19:50,930 | INFO | find new id for shape
+2026-05-28 18:19:50,930 | INFO | add the new object to the objects list
+2026-05-28 18:19:50,930 | INFO | enter to save_to_json
+2026-05-28 18:19:50,931 | INFO | enter to get area of circle 
+2026-05-28 18:19:50,931 | INFO | enter to get perimetr of circle 
+2026-05-28 18:19:50,932 | INFO | Success to update json file
+2026-05-28 18:19:50,932 | INFO | save it to json file
