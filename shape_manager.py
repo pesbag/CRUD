@@ -119,9 +119,11 @@ class ShapeManager:
         :return:
         """
         logger.info("enter to delete shape")
-        self.shapes=[s for s in self.shapes if s.shape_id!=shape_id]
-
-
+        self.shapes = self.load_from_json()
+        # self.shapes=[s for s in self.shapes if s.shape_id!=shape_id]
+        self.shapes = [s for s in self.shapes if s["shape_id"] != shape_id]
+        self.save_to_json()
+        print(f"Shape with ID {shape_id} deleted successfully")
     def save_to_json(self):
         """
         save the shapes to json
@@ -159,8 +161,11 @@ class ShapeManager:
         return data
 def main():
     c=ShapeManager()
-    print(c.create_shape("rectangle"))
-    print(c.create_shape("circle"))
+    # print(c.create_shape("rectangle"))
+    # print(c.create_shape("circle"))
+    # c.get_all_shapes()
+    c.delete_shape(3)
+    # c.delete_shape(6)
     c.get_all_shapes()
 if __name__ == '__main__':
     main()

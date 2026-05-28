@@ -28,35 +28,5 @@
         "radius": 2,
         "area": 12.566,
         "perimeter": 12.566
-    },
-    {
-        "shape_id": 3,
-        "shape_type": "rectangle",
-        "width": 4,
-        "length": 2,
-        "area": 8,
-        "perimeter": 12
-    },
-    {
-        "shape_id": 4,
-        "shape_type": "circle",
-        "radius": 3,
-        "area": 28.274,
-        "perimeter": 18.85
-    },
-    {
-        "shape_id": 5,
-        "shape_type": "rectangle",
-        "width": 8,
-        "length": 3,
-        "area": 24,
-        "perimeter": 22
-    },
-    {
-        "shape_id": 6,
-        "shape_type": "circle",
-        "radius": 2,
-        "area": 12.566,
-        "perimeter": 12.566
     }
 ]

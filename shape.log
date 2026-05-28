@@ -444,3 +444,104 @@
 2026-05-27 21:36:21,167 | INFO | enter to get area of circle 
 2026-05-27 21:36:21,168 | INFO | enter to get perimetr of circle 
 2026-05-27 21:36:21,168 | INFO | enter to load_from_json
+2026-05-27 21:43:15,501 | INFO | enter to load_from_json
+2026-05-27 21:43:15,501 | INFO | enter to create shape
+2026-05-27 21:43:15,501 | INFO | enter to load_from_json
+2026-05-27 21:43:29,803 | INFO | enter to load_from_json
+2026-05-27 21:43:29,803 | INFO | enter to load_from_json
+2026-05-27 21:43:29,804 | INFO | enter to delete shape
+2026-05-27 21:43:43,733 | INFO | enter to load_from_json
+2026-05-27 21:43:43,733 | INFO | enter to load_from_json
+2026-05-27 21:43:43,733 | INFO | enter to delete shape
+2026-05-27 21:43:43,733 | INFO | enter to load_from_json
+2026-05-27 21:43:52,234 | INFO | enter to load_from_json
+2026-05-27 21:43:52,234 | INFO | enter to delete shape
+2026-05-27 21:43:52,234 | INFO | enter to load_from_json
+2026-05-27 21:44:24,417 | INFO | enter to load_from_json
+2026-05-27 21:44:24,417 | INFO | enter to delete shape
+2026-05-27 21:45:08,875 | INFO | enter to load_from_json
+2026-05-27 21:45:08,876 | INFO | enter to delete shape
+2026-05-27 21:45:08,876 | INFO | enter to load_from_json
+2026-05-27 21:45:18,200 | INFO | enter to load_from_json
+2026-05-27 21:45:25,056 | INFO | enter to delete shape
+2026-05-27 21:45:36,447 | INFO | enter to load_from_json
+2026-05-27 21:45:50,735 | INFO | enter to delete shape
+2026-05-27 22:31:36,328 | INFO | enter to load_from_json
+2026-05-27 22:35:52,605 | INFO | enter to load_from_json
+2026-05-27 22:36:14,340 | INFO | enter to load_from_json
+2026-05-27 22:36:15,948 | INFO | enter to delete shape
+2026-05-27 22:36:15,950 | INFO | enter to load_from_json
+2026-05-27 22:36:15,953 | INFO | enter to save_to_json
+2026-05-27 22:36:18,736 | INFO | enter to load_from_json
+2026-05-27 22:36:31,658 | INFO | enter to load_from_json
+2026-05-27 22:36:31,658 | INFO | enter to delete shape
+2026-05-27 22:36:31,658 | INFO | enter to load_from_json
+2026-05-27 22:36:31,659 | INFO | enter to save_to_json
+2026-05-27 22:36:31,659 | INFO | enter to delete shape
+2026-05-27 22:36:31,659 | INFO | enter to load_from_json
+2026-05-27 22:36:31,660 | INFO | enter to save_to_json
+2026-05-27 22:36:31,660 | INFO | enter to load_from_json
+2026-05-28 07:26:06,913 | INFO | enter to load_from_json
+2026-05-28 07:27:38,814 | INFO | enter to load_from_json
+2026-05-28 07:27:45,932 | INFO | enter to create shape
+2026-05-28 07:27:45,933 | INFO | enter to load_from_json
+2026-05-28 07:27:48,516 | INFO | enter to save_to_json
+2026-05-28 07:27:48,517 | INFO | enter to get area of circle 
+2026-05-28 07:27:48,517 | INFO | enter to get perimetr of circle 
+2026-05-28 07:30:09,955 | INFO | enter to load_from_json
+2026-05-28 07:31:18,196 | INFO | enter to load_from_json
+2026-05-28 07:31:18,197 | INFO | enter to load_from_json
+2026-05-28 07:35:06,840 | INFO | enter to load_from_json
+2026-05-28 07:35:13,252 | INFO | enter to delete shape
+2026-05-28 07:35:13,252 | INFO | enter to load_from_json
+2026-05-28 07:35:13,253 | INFO | enter to save_to_json
+2026-05-28 07:35:38,488 | INFO | enter to load_from_json
+2026-05-28 07:35:38,489 | INFO | enter to load_from_json
+2026-05-28 07:35:58,024 | INFO | enter to load_from_json
+2026-05-28 07:36:00,296 | INFO | enter to delete shape
+2026-05-28 07:36:00,296 | INFO | enter to load_from_json
+2026-05-28 07:36:00,297 | INFO | enter to save_to_json
+2026-05-28 07:36:12,145 | INFO | enter to load_from_json
+2026-05-28 07:36:12,146 | INFO | enter to load_from_json
+2026-05-28 07:37:19,635 | INFO | enter to load_from_json
+2026-05-28 07:37:19,636 | INFO | enter to delete shape
+2026-05-28 07:37:19,636 | INFO | enter to load_from_json
+2026-05-28 07:37:19,636 | INFO | enter to save_to_json
+2026-05-28 07:37:19,636 | INFO | enter to load_from_json
+2026-05-28 08:14:11,759 | INFO | enter to load_from_json
+2026-05-28 08:14:11,759 | INFO | enter to delete shape
+2026-05-28 08:14:11,759 | INFO | enter to load_from_json
+2026-05-28 08:14:11,759 | INFO | enter to save_to_json
+2026-05-28 08:14:11,760 | INFO | enter to load_from_json
+2026-05-28 08:14:19,573 | INFO | enter to load_from_json
+2026-05-28 08:14:24,260 | INFO | enter to delete shape
+2026-05-28 08:14:24,261 | INFO | enter to load_from_json
+2026-05-28 08:14:24,261 | INFO | enter to save_to_json
+2026-05-28 08:15:28,394 | INFO | enter to load_from_json
+2026-05-28 08:15:42,995 | INFO | enter to delete shape
+2026-05-28 08:15:47,590 | INFO | enter to load_from_json
+2026-05-28 08:16:48,003 | INFO | enter to load_from_json
+2026-05-28 08:17:26,619 | INFO | enter to load_from_json
+2026-05-28 08:17:33,851 | INFO | enter to delete shape
+2026-05-28 08:17:37,139 | INFO | enter to load_from_json
+2026-05-28 08:18:09,964 | INFO | enter to load_from_json
+2026-05-28 08:19:38,138 | INFO | enter to load_from_json
+2026-05-28 08:19:38,138 | INFO | enter to delete shape
+2026-05-28 08:19:38,138 | INFO | enter to load_from_json
+2026-05-28 08:19:38,138 | INFO | enter to save_to_json
+2026-05-28 08:19:38,139 | INFO | enter to load_from_json
+2026-05-28 08:19:59,283 | INFO | enter to load_from_json
+2026-05-28 08:20:05,022 | INFO | enter to delete shape
+2026-05-28 08:20:08,927 | INFO | enter to load_from_json
+2026-05-28 08:23:38,881 | INFO | enter to load_from_json
+2026-05-28 08:23:39,607 | INFO | enter to delete shape
+2026-05-28 08:23:39,607 | INFO | enter to load_from_json
+2026-05-28 08:23:39,608 | INFO | enter to save_to_json
+2026-05-28 08:23:56,274 | INFO | enter to load_from_json
+2026-05-28 08:23:57,591 | INFO | enter to delete shape
+2026-05-28 08:23:57,591 | INFO | enter to load_from_json
+2026-05-28 08:23:57,592 | INFO | enter to save_to_json
+2026-05-28 08:24:33,155 | INFO | enter to load_from_json
+2026-05-28 08:24:34,387 | INFO | enter to delete shape
+2026-05-28 08:24:34,387 | INFO | enter to load_from_json
+2026-05-28 08:24:34,387 | INFO | enter to save_to_json
