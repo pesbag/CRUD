@@ -2139,3 +2139,564 @@ Traceback (most recent call last):
     return {"radius": int(radius)}
                       ~~~^^^^^^^^
 ValueError: invalid literal for int() with base 10: 'g'
+2026-05-29 12:01:33,848 | INFO | enter to load_from_json
+2026-05-29 12:01:40,846 | INFO | enter to create shape
+2026-05-29 12:01:40,846 | INFO | enter to load_from_json
+2026-05-29 12:01:40,847 | INFO | loaded the json file to shapes list
+2026-05-29 12:01:40,847 | INFO | enter to get_circle function
+2026-05-29 12:01:42,882 | ERROR | Error: the value f illegal
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\shape_manager.py", line 76, in get_circle
+    return {"radius": int(radius)}
+                      ~~~^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'f'
+2026-05-29 12:01:42,887 | ERROR | ValueError: the values should be a positive integer
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\shape_manager.py", line 119, in create_shape
+    shape_params_func=target_type["input_func"](self)
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\shape_manager.py", line 76, in get_circle
+    return {"radius": int(radius)}
+                      ~~~^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'f'
+2026-05-29 12:04:31,099 | INFO | enter to load_from_json
+2026-05-29 12:04:31,100 | INFO | enter to shape_update function
+2026-05-29 12:04:34,976 | INFO | enter to load_from_json
+2026-05-29 12:04:34,976 | INFO | enter to get_circle function
+2026-05-29 12:04:39,029 | ERROR | Error: the value d illegal
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\shape_manager.py", line 76, in get_circle
+    return {"radius": int(radius)}
+                      ~~~^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'd'
+2026-05-29 12:05:37,858 | INFO | enter to load_from_json
+2026-05-29 12:05:37,860 | INFO | enter to shape_update function
+2026-05-29 12:05:39,093 | INFO | enter to load_from_json
+2026-05-29 12:05:39,093 | INFO | enter to get_circle function
+2026-05-29 12:06:01,038 | ERROR | Error: the value j illegal
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\shape_manager.py", line 76, in get_circle
+    return {"radius": int(radius)}
+                      ~~~^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'j'
+2026-05-29 12:07:00,465 | INFO | enter to load_from_json
+2026-05-29 12:07:00,467 | INFO | enter to shape_update function
+2026-05-29 12:07:00,478 | ERROR | Error: shape is should be a positive integer
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\main.py", line 56, in shape_update
+    shape_id = int(input("please enter the id shape for update\n"))
+ValueError: invalid literal for int() with base 10: ''
+2026-05-29 12:07:03,262 | INFO | enter to load_from_json
+2026-05-29 12:07:03,262 | INFO | enter to shape_update function
+2026-05-29 12:07:05,649 | INFO | enter to load_from_json
+2026-05-29 12:07:05,700 | INFO | enter to get area of circle 
+2026-05-29 12:07:05,701 | INFO | enter to get perimetr of circle 
+2026-05-29 12:07:13,750 | INFO | enter to get_circle function
+2026-05-29 12:07:34,565 | ERROR | Error: the value d illegal
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\shape_manager.py", line 76, in get_circle
+    return {"radius": int(radius)}
+                      ~~~^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'd'
+2026-05-29 12:07:39,864 | INFO | enter to load_from_json
+2026-05-29 12:07:39,865 | INFO | enter to shape_update function
+2026-05-29 12:07:44,812 | INFO | enter to load_from_json
+2026-05-29 12:07:44,841 | INFO | enter to get area of circle 
+2026-05-29 12:07:44,841 | INFO | enter to get perimetr of circle 
+2026-05-29 12:07:48,964 | INFO | enter to get area of circle 
+2026-05-29 12:07:48,964 | INFO | enter to get perimetr of circle 
+2026-05-29 12:07:50,651 | INFO | enter to get area of circle 
+2026-05-29 12:07:50,651 | INFO | enter to get perimetr of circle 
+2026-05-29 12:08:01,701 | INFO | enter to get_circle function
+2026-05-29 12:08:12,763 | INFO | enter to get area of circle 
+2026-05-29 12:08:12,763 | INFO | enter to get perimetr of circle 
+2026-05-29 12:10:54,864 | INFO | enter to shape_update function
+2026-05-29 12:10:55,206 | ERROR | Error: shape is should be a positive integer
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\main.py", line 71, in shape_update
+    new_data = input_func(shape_manager)
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\shape_manager.py", line 74, in get_circle
+    radius = input("please enter radius of circle\n")
+  File "C:\Program Files\JetBrains\PyCharm 2025.2.4\plugins\python-ce\helpers\pydev\_pydev_bundle\pydev_stdin.py", line 117, in readline
+    result = self.original_stdin.readline(*args, **kwargs)
+  File "<frozen codecs>", line 322, in decode
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\main.py", line 56, in shape_update
+    shape_id = int(input("please enter the id shape for update\n"))
+ValueError: invalid literal for int() with base 10: 'd'
+2026-05-29 12:10:55,260 | INFO | enter to get area of circle 
+2026-05-29 12:10:55,261 | INFO | enter to get perimetr of circle 
+2026-05-29 12:10:57,625 | INFO | enter to get area of circle 
+2026-05-29 12:10:57,625 | INFO | enter to get perimetr of circle 
+2026-05-29 12:11:03,250 | INFO | enter to shape_update function
+2026-05-29 12:14:30,347 | INFO | enter to load_from_json
+2026-05-29 12:14:37,660 | ERROR | Error: the id shape to remove should be a positive integer
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\main.py", line 87, in delete_shapes
+    shape_id=int(input("please enter shape id to remove"))
+ValueError: invalid literal for int() with base 10: 'w'
+2026-05-29 12:14:37,665 | ERROR | Error: the id shape to remove should be a positive integer
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\main.py", line 115, in main
+    delete_shapes(shape_manage)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\main.py", line 87, in delete_shapes
+    shape_id=int(input("please enter shape id to remove"))
+ValueError: invalid literal for int() with base 10: 'w'
+2026-05-29 12:14:47,050 | INFO | enter to load_from_json
+2026-05-29 12:14:47,050 | INFO | enter to shape_update function
+2026-05-29 12:14:49,441 | INFO | enter to load_from_json
+2026-05-29 12:14:49,442 | INFO | enter to get_circle function
+2026-05-29 12:14:54,249 | ERROR | Error: the value d illegal
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\shape_manager.py", line 76, in get_circle
+    return {"radius": int(radius)}
+                      ~~~^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'd'
+2026-05-29 12:20:18,330 | INFO | enter to load_from_json
+2026-05-29 12:20:18,331 | INFO | enter to shape_update function
+2026-05-29 12:20:21,102 | INFO | enter to load_from_json
+2026-05-29 12:20:21,103 | INFO | enter to get_circle function
+2026-05-29 12:20:25,909 | ERROR | Error: the value s illegal
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\shape_manager.py", line 76, in get_circle
+    return {"radius": int(radius)}
+                      ~~~^^^^^^^^
+ValueError: invalid literal for int() with base 10: 's'
+2026-05-29 12:20:37,270 | INFO | enter to load_from_json
+2026-05-29 12:20:37,271 | INFO | enter to shape_update function
+2026-05-29 12:20:38,870 | INFO | enter to load_from_json
+2026-05-29 12:20:38,871 | INFO | enter to get_circle function
+2026-05-29 12:20:42,285 | INFO | enter to update_shape function
+2026-05-29 12:20:42,285 | INFO | enter to load_from_json
+2026-05-29 12:20:42,286 | INFO | enter to load_from_json
+2026-05-29 12:20:42,286 | INFO | enter to save_to_json
+2026-05-29 12:20:42,286 | INFO | enter to get area of square 
+2026-05-29 12:20:42,287 | INFO | enter to get perimetr of square
+2026-05-29 12:20:42,287 | INFO | enter to get area of square 
+2026-05-29 12:20:42,287 | INFO | enter to get perimetr of square
+2026-05-29 12:20:42,287 | INFO | enter to get area of circle 
+2026-05-29 12:20:42,287 | INFO | enter to get perimetr of circle 
+2026-05-29 12:20:42,287 | INFO | Success to update json file
+2026-05-29 12:20:42,287 | INFO | enter to get_all_shapes function
+2026-05-29 12:20:42,287 | INFO | enter to load_from_json
+2026-05-29 12:20:42,288 | INFO | load the shapes from json file in get_all_shapes function
+2026-05-29 12:20:42,288 | INFO | enter to get area of square 
+2026-05-29 12:20:42,288 | INFO | enter to get perimetr of square
+2026-05-29 12:20:42,288 | INFO | enter to get area of square 
+2026-05-29 12:20:42,288 | INFO | enter to get perimetr of square
+2026-05-29 12:20:42,288 | INFO | enter to get area of circle 
+2026-05-29 12:20:42,288 | INFO | enter to get perimetr of circle 
+2026-05-29 12:21:37,035 | INFO | enter to load_from_json
+2026-05-29 12:21:37,036 | INFO | enter to shape_update function
+2026-05-29 12:21:39,387 | INFO | enter to load_from_json
+2026-05-29 12:21:39,387 | INFO | enter to get_circle function
+2026-05-29 12:21:41,369 | ERROR | Error: the value f illegal
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\shape_manager.py", line 76, in get_circle
+    return {"radius": int(radius)}
+                      ~~~^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'f'
+2026-05-29 12:27:32,300 | INFO | enter to load_from_json
+2026-05-29 12:27:38,251 | INFO | enter to create shape
+2026-05-29 12:27:38,251 | INFO | enter to load_from_json
+2026-05-29 12:27:38,251 | INFO | loaded the json file to shapes list
+2026-05-29 12:27:38,251 | ERROR | Error shape class rectangl was not found
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\shape_manager.py", line 112, in create_shape
+    target_type=self.shapes_dict[shape]
+                ~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 'rectangl'
+2026-05-29 12:27:49,398 | INFO | enter to load_from_json
+2026-05-29 12:27:54,256 | INFO | enter to create shape
+2026-05-29 12:27:54,257 | INFO | enter to load_from_json
+2026-05-29 12:27:54,257 | INFO | loaded the json file to shapes list
+2026-05-29 12:27:54,257 | INFO | enter to get_rectangle function
+2026-05-29 12:28:06,970 | INFO | get to find_id_to_shape function
+2026-05-29 12:28:06,970 | INFO | find new id for shape
+2026-05-29 12:28:06,970 | INFO | add the new object to the objects list
+2026-05-29 12:28:06,970 | INFO | enter to save_to_json
+2026-05-29 12:28:06,970 | INFO | enter to get area of square 
+2026-05-29 12:28:06,971 | INFO | enter to get perimetr of square
+2026-05-29 12:28:06,971 | INFO | enter to get area of square 
+2026-05-29 12:28:06,971 | INFO | enter to get perimetr of square
+2026-05-29 12:28:06,971 | INFO | enter to get area of circle 
+2026-05-29 12:28:06,971 | INFO | enter to get perimetr of circle 
+2026-05-29 12:28:06,971 | INFO | enter to to_dict of Shape
+2026-05-29 12:28:06,971 | INFO | enter to get area of rectangle 
+2026-05-29 12:28:06,971 | INFO | enter to get perimetr of rectangle
+2026-05-29 12:28:06,971 | INFO | Success to update json file
+2026-05-29 12:28:06,971 | INFO | save it to json file
+2026-05-29 12:28:21,055 | INFO | enter to load_from_json
+2026-05-29 12:28:21,056 | INFO | enterd to get_shape function
+2026-05-29 12:28:21,056 | INFO | enter to get_all_shapes function
+2026-05-29 12:28:21,056 | INFO | enter to load_from_json
+2026-05-29 12:28:21,056 | INFO | load the shapes from json file in get_all_shapes function
+2026-05-29 12:28:21,056 | INFO | enter to get area of square 
+2026-05-29 12:28:21,056 | INFO | enter to get perimetr of square
+2026-05-29 12:28:21,056 | INFO | enter to get area of square 
+2026-05-29 12:28:21,056 | INFO | enter to get perimetr of square
+2026-05-29 12:28:21,056 | INFO | enter to get area of circle 
+2026-05-29 12:28:21,056 | INFO | enter to get perimetr of circle 
+2026-05-29 12:28:21,056 | INFO | enter to get area of rectangle 
+2026-05-29 12:28:21,056 | INFO | enter to get perimetr of rectangle
+2026-05-29 12:59:17,983 | INFO | enter to load_from_json
+2026-05-29 12:59:23,483 | INFO | enter to create shape
+2026-05-29 12:59:23,483 | INFO | enter to load_from_json
+2026-05-29 12:59:23,483 | INFO | loaded the json file to shapes list
+2026-05-29 12:59:23,483 | INFO | enter to get_square function
+2026-05-29 12:59:26,357 | ERROR | Error: length of side cannot be negative (-4)
+2026-05-29 12:59:26,357 | ERROR | ValueError: the values should be a positive integer
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\shape_manager.py", line 131, in create_shape
+    shape_params_func=target_type["input_func"](self)
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\shape_manager.py", line 101, in get_square
+    self.is_negative_value(side)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\shape_manager.py", line 62, in is_negative_value
+    raise ValueError("Length cannot be negative")
+ValueError: Length cannot be negative
+2026-05-29 12:59:38,365 | INFO | enter to load_from_json
+2026-05-29 12:59:45,101 | INFO | enter to create shape
+2026-05-29 12:59:45,101 | INFO | enter to load_from_json
+2026-05-29 12:59:45,102 | INFO | loaded the json file to shapes list
+2026-05-29 12:59:45,102 | INFO | enter to get_square function
+2026-05-29 12:59:47,110 | INFO | get to find_id_to_shape function
+2026-05-29 12:59:47,110 | INFO | find new id for shape
+2026-05-29 12:59:47,110 | INFO | add the new object to the objects list
+2026-05-29 12:59:47,110 | INFO | enter to save_to_json
+2026-05-29 12:59:47,111 | INFO | enter to get area of square 
+2026-05-29 12:59:47,111 | INFO | enter to get perimetr of square
+2026-05-29 12:59:47,111 | INFO | enter to get area of square 
+2026-05-29 12:59:47,111 | INFO | enter to get perimetr of square
+2026-05-29 12:59:47,111 | INFO | enter to get area of circle 
+2026-05-29 12:59:47,111 | INFO | enter to get perimetr of circle 
+2026-05-29 12:59:47,111 | INFO | enter to to_dict of Shape
+2026-05-29 12:59:47,111 | INFO | enter to get area of rectangle 
+2026-05-29 12:59:47,111 | INFO | enter to get perimetr of rectangle
+2026-05-29 12:59:47,111 | INFO | enter to get area of square 
+2026-05-29 12:59:47,111 | INFO | enter to get perimetr of square
+2026-05-29 12:59:47,111 | INFO | Success to update json file
+2026-05-29 12:59:47,112 | INFO | save it to json file
+2026-05-29 12:59:52,107 | INFO | enter to load_from_json
+2026-05-29 12:59:52,108 | INFO | enter to shape_update function
+2026-05-29 13:00:10,852 | INFO | enter to load_from_json
+2026-05-29 13:00:10,853 | INFO | enter to get_square function
+2026-05-29 13:00:15,747 | ERROR | Error: length of side cannot be negative (-9)
+2026-05-29 13:01:19,797 | INFO | enter to load_from_json
+2026-05-29 13:01:22,819 | INFO | enter to create shape
+2026-05-29 13:01:22,819 | INFO | enter to load_from_json
+2026-05-29 13:01:22,819 | INFO | loaded the json file to shapes list
+2026-05-29 13:01:22,820 | INFO | enter to get_circle function
+2026-05-29 13:01:28,537 | ERROR | Error: length of side cannot be negative (-5)
+2026-05-29 13:01:28,537 | ERROR | ValueError: the values should be a positive integer
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\shape_manager.py", line 134, in create_shape
+    shape_params_func=target_type["input_func"](self)
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\shape_manager.py", line 89, in get_circle
+    self.is_negative_value(radius)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\shape_manager.py", line 62, in is_negative_value
+    raise ValueError("Length cannot be negative")
+ValueError: Length cannot be negative
+2026-05-29 13:01:37,022 | INFO | enter to load_from_json
+2026-05-29 13:01:39,362 | INFO | enter to create shape
+2026-05-29 13:01:39,362 | INFO | enter to load_from_json
+2026-05-29 13:01:39,362 | INFO | loaded the json file to shapes list
+2026-05-29 13:01:39,362 | INFO | enter to get_circle function
+2026-05-29 13:01:40,995 | ERROR | Error: the value - illegal
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\shape_manager.py", line 91, in get_circle
+    return {"radius": int(radius)}
+                      ~~~^^^^^^^^
+ValueError: invalid literal for int() with base 10: '-'
+2026-05-29 13:01:40,996 | ERROR | ValueError: the values should be a positive integer
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\shape_manager.py", line 134, in create_shape
+    shape_params_func=target_type["input_func"](self)
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\shape_manager.py", line 91, in get_circle
+    return {"radius": int(radius)}
+                      ~~~^^^^^^^^
+ValueError: invalid literal for int() with base 10: '-'
+2026-05-29 13:10:00,618 | INFO | enter to load_from_json
+2026-05-29 13:10:04,110 | INFO | enter to delete shape
+2026-05-29 13:10:04,111 | INFO | enter to load_from_json
+2026-05-29 13:10:04,111 | ERROR | error: the shape id: -4 was not found
+2026-05-29 13:10:04,111 | INFO | enter to save_to_json
+2026-05-29 13:10:04,111 | INFO | enter to get area of square 
+2026-05-29 13:10:04,112 | INFO | enter to get perimetr of square
+2026-05-29 13:10:04,112 | INFO | enter to get area of square 
+2026-05-29 13:10:04,112 | INFO | enter to get perimetr of square
+2026-05-29 13:10:04,112 | INFO | enter to get area of circle 
+2026-05-29 13:10:04,112 | INFO | enter to get perimetr of circle 
+2026-05-29 13:10:04,112 | INFO | enter to to_dict of Shape
+2026-05-29 13:10:04,112 | INFO | enter to get area of rectangle 
+2026-05-29 13:10:04,112 | INFO | enter to get perimetr of rectangle
+2026-05-29 13:10:04,112 | INFO | enter to get area of square 
+2026-05-29 13:10:04,112 | INFO | enter to get perimetr of square
+2026-05-29 13:10:04,112 | INFO | Success to update json file
+2026-05-29 13:10:11,940 | INFO | enter to load_from_json
+2026-05-29 13:10:13,189 | ERROR | Error: the id shape to remove should be a positive integer
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\main.py", line 87, in delete_shapes
+    shape_id=int(input("please enter shape id to remove"))
+ValueError: invalid literal for int() with base 10: 'd'
+2026-05-29 13:10:13,190 | ERROR | Error: the id shape to remove should be a positive integer
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\main.py", line 115, in main
+    delete_shapes(shape_manage)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\main.py", line 87, in delete_shapes
+    shape_id=int(input("please enter shape id to remove"))
+ValueError: invalid literal for int() with base 10: 'd'
+2026-05-29 13:16:49,710 | INFO | enter to load_from_json
+2026-05-29 13:16:52,360 | ERROR | Error: the id shape to remove should be a positive integer
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\main.py", line 87, in delete_shapes
+    shape_id=int(input("please enter shape id to remove").strip())
+ValueError: invalid literal for int() with base 10: 'f'
+2026-05-29 13:16:52,366 | ERROR | Error: the id shape to remove should be a positive integer
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\main.py", line 115, in main
+    delete_shapes(shape_manage)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\main.py", line 87, in delete_shapes
+    shape_id=int(input("please enter shape id to remove").strip())
+ValueError: invalid literal for int() with base 10: 'f'
+2026-05-29 13:17:05,885 | INFO | enter to load_from_json
+2026-05-29 13:17:09,300 | INFO | enter to delete shape
+2026-05-29 13:17:42,786 | INFO | enter to load_from_json
+2026-05-29 13:17:44,304 | INFO | enter to delete shape
+2026-05-29 13:17:47,534 | INFO | enter to load_from_json
+2026-05-29 13:17:48,664 | ERROR | Error: the id shape to remove should be a positive integer
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\main.py", line 87, in delete_shapes
+    shape_id=int(input("please enter shape id to remove").strip())
+ValueError: invalid literal for int() with base 10: 'd'
+2026-05-29 13:17:48,669 | ERROR | Error: the id shape to remove should be a positive integer
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\main.py", line 115, in main
+    delete_shapes(shape_manage)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\main.py", line 87, in delete_shapes
+    shape_id=int(input("please enter shape id to remove").strip())
+ValueError: invalid literal for int() with base 10: 'd'
+2026-05-29 13:21:12,184 | INFO | enter to load_from_json
+2026-05-29 13:21:14,619 | ERROR | Error: the id shape to remove should be a positive integer
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\main.py", line 87, in delete_shapes
+    shape_id=int(input("please enter shape id to remove").strip())
+ValueError: invalid literal for int() with base 10: 'כ'
+2026-05-29 13:21:14,624 | ERROR | Error: the id shape to remove should be a positive integer
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\main.py", line 119, in main
+    delete_shapes(shape_manage)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\main.py", line 87, in delete_shapes
+    shape_id=int(input("please enter shape id to remove").strip())
+ValueError: invalid literal for int() with base 10: 'כ'
+2026-05-29 13:22:47,706 | INFO | enter to load_from_json
+2026-05-29 13:22:49,696 | ERROR | Error: the id shape to remove should be a positive integer
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\main.py", line 87, in delete_shapes
+    shape_id=int(input("please enter shape id to remove").strip())
+ValueError: invalid literal for int() with base 10: ''
+2026-05-29 13:22:49,702 | ERROR | Error: the id shape to remove should be a positive integer
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\main.py", line 119, in main
+    delete_shapes(shape_manage)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\main.py", line 87, in delete_shapes
+    shape_id=int(input("please enter shape id to remove").strip())
+ValueError: invalid literal for int() with base 10: ''
+2026-05-29 13:22:56,334 | INFO | enter to load_from_json
+2026-05-29 13:23:00,202 | INFO | enter to create shape
+2026-05-29 13:23:00,202 | INFO | enter to load_from_json
+2026-05-29 13:23:00,203 | INFO | loaded the json file to shapes list
+2026-05-29 13:23:00,203 | INFO | enter to get_circle function
+2026-05-29 13:23:04,023 | ERROR | Error: the value d illegal
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\shape_manager.py", line 91, in get_circle
+    return {"radius": int(radius)}
+                      ~~~^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'd'
+2026-05-29 13:23:04,024 | ERROR | ValueError: the values should be a positive integer
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\shape_manager.py", line 134, in create_shape
+    shape_params_func=target_type["input_func"](self)
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\shape_manager.py", line 91, in get_circle
+    return {"radius": int(radius)}
+                      ~~~^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'd'
+2026-05-29 13:23:08,431 | INFO | enter to load_from_json
+2026-05-29 13:23:15,539 | INFO | enter to create shape
+2026-05-29 13:23:15,539 | INFO | enter to load_from_json
+2026-05-29 13:23:15,539 | INFO | loaded the json file to shapes list
+2026-05-29 13:23:15,539 | INFO | enter to get_rectangle function
+2026-05-29 13:23:21,768 | INFO | get to find_id_to_shape function
+2026-05-29 13:23:21,768 | INFO | find new id for shape
+2026-05-29 13:23:21,769 | INFO | add the new object to the objects list
+2026-05-29 13:23:21,769 | INFO | enter to save_to_json
+2026-05-29 13:23:21,769 | INFO | enter to get area of square 
+2026-05-29 13:23:21,769 | INFO | enter to get perimetr of square
+2026-05-29 13:23:21,769 | INFO | enter to get area of square 
+2026-05-29 13:23:21,769 | INFO | enter to get perimetr of square
+2026-05-29 13:23:21,769 | INFO | enter to get area of circle 
+2026-05-29 13:23:21,769 | INFO | enter to get perimetr of circle 
+2026-05-29 13:23:21,769 | INFO | enter to to_dict of Shape
+2026-05-29 13:23:21,769 | INFO | enter to get area of rectangle 
+2026-05-29 13:23:21,770 | INFO | enter to get perimetr of rectangle
+2026-05-29 13:23:21,770 | INFO | enter to get area of square 
+2026-05-29 13:23:21,770 | INFO | enter to get perimetr of square
+2026-05-29 13:23:21,770 | INFO | enter to to_dict of Shape
+2026-05-29 13:23:21,770 | INFO | enter to get area of rectangle 
+2026-05-29 13:23:21,770 | INFO | enter to get perimetr of rectangle
+2026-05-29 13:23:21,770 | INFO | Success to update json file
+2026-05-29 13:23:21,770 | INFO | save it to json file
+2026-05-29 13:23:27,228 | INFO | enter to load_from_json
+2026-05-29 13:23:27,229 | INFO | enterd to get_shape function
+2026-05-29 13:23:27,229 | INFO | enter to get_all_shapes function
+2026-05-29 13:23:27,229 | INFO | enter to load_from_json
+2026-05-29 13:23:27,229 | INFO | load the shapes from json file in get_all_shapes function
+2026-05-29 13:23:27,230 | INFO | enter to get area of square 
+2026-05-29 13:23:27,230 | INFO | enter to get perimetr of square
+2026-05-29 13:23:27,230 | INFO | enter to get area of square 
+2026-05-29 13:23:27,230 | INFO | enter to get perimetr of square
+2026-05-29 13:23:27,230 | INFO | enter to get area of circle 
+2026-05-29 13:23:27,230 | INFO | enter to get perimetr of circle 
+2026-05-29 13:23:27,230 | INFO | enter to get area of rectangle 
+2026-05-29 13:23:27,230 | INFO | enter to get perimetr of rectangle
+2026-05-29 13:23:27,230 | INFO | enter to get area of square 
+2026-05-29 13:23:27,230 | INFO | enter to get perimetr of square
+2026-05-29 13:23:27,230 | INFO | enter to get area of rectangle 
+2026-05-29 13:23:27,230 | INFO | enter to get perimetr of rectangle
+2026-05-29 13:23:33,908 | INFO | enter to load_from_json
+2026-05-29 13:23:33,909 | INFO | enter to shape_update function
+2026-05-29 13:23:36,264 | INFO | enter to load_from_json
+2026-05-29 13:23:36,265 | INFO | enter to get_circle function
+2026-05-29 13:23:40,499 | ERROR | Error: the value f illegal
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\shape_manager.py", line 91, in get_circle
+    return {"radius": int(radius)}
+                      ~~~^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'f'
+2026-05-29 13:26:36,959 | INFO | enter to load_from_json
+2026-05-29 13:26:36,960 | INFO | enter to shape_update function
+2026-05-29 13:26:39,107 | INFO | enter to load_from_json
+2026-05-29 13:26:39,108 | INFO | enter to get_circle function
+2026-05-29 13:26:41,783 | ERROR | Error: the value d illegal
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\shape_manager.py", line 91, in get_circle
+    return {"radius": int(radius)}
+                      ~~~^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'd'
+2026-05-29 13:26:56,950 | INFO | enter to load_from_json
+2026-05-29 13:27:00,912 | ERROR | Error: the id shape to remove should be a positive integer
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\main.py", line 88, in delete_shapes
+    shape_id=int(input("please enter shape id to remove").strip())
+ValueError: invalid literal for int() with base 10: 's'
+2026-05-29 13:27:00,913 | ERROR | Error: the id shape to remove should be a positive integer
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\main.py", line 120, in main
+    delete_shapes(shape_manage)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\main.py", line 88, in delete_shapes
+    shape_id=int(input("please enter shape id to remove").strip())
+ValueError: invalid literal for int() with base 10: 's'
+2026-05-29 13:27:17,966 | INFO | enter to load_from_json
+2026-05-29 13:27:20,581 | INFO | enter to delete shape
+2026-05-29 13:27:20,581 | INFO | enter to load_from_json
+2026-05-29 13:27:20,582 | ERROR | error: the shape id: 23 was not found
+2026-05-29 13:27:20,582 | INFO | enter to save_to_json
+2026-05-29 13:27:20,582 | INFO | enter to get area of square 
+2026-05-29 13:27:20,582 | INFO | enter to get perimetr of square
+2026-05-29 13:27:20,582 | INFO | enter to get area of square 
+2026-05-29 13:27:20,582 | INFO | enter to get perimetr of square
+2026-05-29 13:27:20,582 | INFO | enter to get area of circle 
+2026-05-29 13:27:20,583 | INFO | enter to get perimetr of circle 
+2026-05-29 13:27:20,583 | INFO | enter to to_dict of Shape
+2026-05-29 13:27:20,583 | INFO | enter to get area of rectangle 
+2026-05-29 13:27:20,583 | INFO | enter to get perimetr of rectangle
+2026-05-29 13:27:20,583 | INFO | enter to get area of square 
+2026-05-29 13:27:20,583 | INFO | enter to get perimetr of square
+2026-05-29 13:27:20,583 | INFO | enter to to_dict of Shape
+2026-05-29 13:27:20,583 | INFO | enter to get area of rectangle 
+2026-05-29 13:27:20,583 | INFO | enter to get perimetr of rectangle
+2026-05-29 13:27:20,583 | INFO | Success to update json file
+2026-05-29 13:32:02,463 | INFO | enter to load_from_json
+2026-05-29 13:32:05,597 | INFO | enter to delete shape
+2026-05-29 13:32:05,597 | INFO | enter to load_from_json
+2026-05-29 13:32:05,598 | ERROR | error: the shape id: 34 was not found
+2026-05-29 13:32:05,598 | INFO | enter to save_to_json
+2026-05-29 13:32:05,598 | INFO | enter to get area of square 
+2026-05-29 13:32:05,598 | INFO | enter to get perimetr of square
+2026-05-29 13:32:05,598 | INFO | enter to get area of square 
+2026-05-29 13:32:05,598 | INFO | enter to get perimetr of square
+2026-05-29 13:32:05,598 | INFO | enter to get area of circle 
+2026-05-29 13:32:05,599 | INFO | enter to get perimetr of circle 
+2026-05-29 13:32:05,599 | INFO | enter to to_dict of Shape
+2026-05-29 13:32:05,599 | INFO | enter to get area of rectangle 
+2026-05-29 13:32:05,599 | INFO | enter to get perimetr of rectangle
+2026-05-29 13:32:05,599 | INFO | enter to get area of square 
+2026-05-29 13:32:05,599 | INFO | enter to get perimetr of square
+2026-05-29 13:32:05,599 | INFO | enter to to_dict of Shape
+2026-05-29 13:32:05,599 | INFO | enter to get area of rectangle 
+2026-05-29 13:32:05,599 | INFO | enter to get perimetr of rectangle
+2026-05-29 13:32:05,599 | INFO | Success to update json file
+2026-05-29 13:32:12,820 | INFO | enter to load_from_json
+2026-05-29 13:32:12,820 | INFO | enterd to get_shape function
+2026-05-29 13:32:12,820 | INFO | enter to get_all_shapes function
+2026-05-29 13:32:12,820 | INFO | enter to load_from_json
+2026-05-29 13:32:12,821 | INFO | load the shapes from json file in get_all_shapes function
+2026-05-29 13:32:12,821 | INFO | enter to get area of square 
+2026-05-29 13:32:12,821 | INFO | enter to get perimetr of square
+2026-05-29 13:32:12,821 | INFO | enter to get area of square 
+2026-05-29 13:32:12,821 | INFO | enter to get perimetr of square
+2026-05-29 13:32:12,821 | INFO | enter to get area of circle 
+2026-05-29 13:32:12,821 | INFO | enter to get perimetr of circle 
+2026-05-29 13:32:12,821 | INFO | enter to get area of rectangle 
+2026-05-29 13:32:12,821 | INFO | enter to get perimetr of rectangle
+2026-05-29 13:32:12,821 | INFO | enter to get area of square 
+2026-05-29 13:32:12,821 | INFO | enter to get perimetr of square
+2026-05-29 13:32:12,821 | INFO | enter to get area of rectangle 
+2026-05-29 13:32:12,821 | INFO | enter to get perimetr of rectangle
+2026-05-29 13:32:21,958 | INFO | enter to load_from_json
+2026-05-29 13:32:27,140 | INFO | enter to delete shape
+2026-05-29 13:32:27,140 | INFO | enter to load_from_json
+2026-05-29 13:32:27,140 | ERROR | error: the shape id: 3 was not found
+2026-05-29 13:32:27,140 | INFO | enter to save_to_json
+2026-05-29 13:32:27,141 | INFO | enter to get area of square 
+2026-05-29 13:32:27,141 | INFO | enter to get perimetr of square
+2026-05-29 13:32:27,141 | INFO | enter to get area of square 
+2026-05-29 13:32:27,141 | INFO | enter to get perimetr of square
+2026-05-29 13:32:27,141 | INFO | enter to get area of circle 
+2026-05-29 13:32:27,141 | INFO | enter to get perimetr of circle 
+2026-05-29 13:32:27,141 | INFO | enter to to_dict of Shape
+2026-05-29 13:32:27,141 | INFO | enter to get area of rectangle 
+2026-05-29 13:32:27,141 | INFO | enter to get perimetr of rectangle
+2026-05-29 13:32:27,141 | INFO | enter to get area of square 
+2026-05-29 13:32:27,141 | INFO | enter to get perimetr of square
+2026-05-29 13:32:27,141 | INFO | enter to to_dict of Shape
+2026-05-29 13:32:27,141 | INFO | enter to get area of rectangle 
+2026-05-29 13:32:27,141 | INFO | enter to get perimetr of rectangle
+2026-05-29 13:32:27,141 | INFO | Success to update json file
+2026-05-29 13:32:51,627 | INFO | enter to load_from_json
+2026-05-29 13:32:55,903 | INFO | enter to delete shape
+2026-05-29 13:32:55,903 | INFO | enter to load_from_json
+2026-05-29 13:32:55,904 | INFO | enter to save_to_json
+2026-05-29 13:32:55,904 | INFO | enter to get area of square 
+2026-05-29 13:32:55,904 | INFO | enter to get perimetr of square
+2026-05-29 13:32:55,905 | INFO | enter to get area of square 
+2026-05-29 13:32:55,905 | INFO | enter to get perimetr of square
+2026-05-29 13:32:55,905 | INFO | enter to get area of circle 
+2026-05-29 13:32:55,905 | INFO | enter to get perimetr of circle 
+2026-05-29 13:32:55,905 | INFO | enter to get area of square 
+2026-05-29 13:32:55,905 | INFO | enter to get perimetr of square
+2026-05-29 13:32:55,905 | INFO | enter to to_dict of Shape
+2026-05-29 13:32:55,905 | INFO | enter to get area of rectangle 
+2026-05-29 13:32:55,905 | INFO | enter to get perimetr of rectangle
+2026-05-29 13:32:55,905 | INFO | Success to update json file

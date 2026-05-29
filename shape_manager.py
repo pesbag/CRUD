@@ -48,6 +48,18 @@ class ShapeManager:
             new_id=max([shape.shape_id for shape in all_data]) + 1
             logger.info("find new id for shape")
         return new_id
+    def is_negative_value(self,val):
+        """
+        check if the value length is negative
+        :param val: the length
+        :raise:
+        """
+        if len(val)<=1:
+            return
+        if val[0]=="-":
+            logger.error(f"Error: length of side cannot be negative ({val})")
+            print(f"Error: length of side cannot be negative ({val})")
+            raise ValueError("Length cannot be negative")
 
     def get_rectangle(self):
         """
@@ -56,8 +68,10 @@ class ShapeManager:
         :raises: ValueError: if one of the values illegal
         """
         logger.info("enter to get_rectangle function")
-        width = input("please enter width of rectangle\n")
-        length = input("please enter length of rectangle\n")
+        width = input("please enter width of rectangle\n").strip()
+        self.is_negative_value(width)
+        length = input("please enter length of rectangle\n").strip()
+        self.is_negative_value(length)
         try:
             return {"width": int(width), "length": int(length)}
         except ValueError:
@@ -71,7 +85,8 @@ class ShapeManager:
         :raises:ValueError:
         """
         logger.info("enter to get_circle function")
-        radius = input("please enter radius of circle\n")
+        radius = input("please enter radius of circle\n").strip()
+        self.is_negative_value(radius)
         try:
             return {"radius": int(radius)}
         except ValueError:
@@ -85,7 +100,8 @@ class ShapeManager:
         :raises: ValueError: if one of the values illegal
         """
         logger.info("enter to get_square function")
-        side = input("please enter side of square\n")
+        side = input("please enter side of square\n").strip()
+        self.is_negative_value(side)
         try:
             return {"side": int(side)}
         except ValueError:
@@ -175,7 +191,6 @@ class ShapeManager:
             logger.error(f"Error: shape with id {shape_id} not found")
             print(f"Error: shape with id {shape_id} not found")
             return
-
         self.save_to_json()
         print(f"shape {shape_id} updated successfully")
 
@@ -186,6 +201,7 @@ class ShapeManager:
         :return:
         """
         logger.info("enter to delete shape")
+
         # load the json file to list of dictionaries
         self.shapes = self.load_from_json()
         # create a new list with not including the shape id to remove
@@ -194,12 +210,14 @@ class ShapeManager:
             if shape.shape_id==shape_id:
                 is_found = True
                 self.shapes.pop(index)
+                print(f"Shape with id: {shape_id} deleted successfully")
                 break
         if not is_found:
             logger.error(f"error: the shape id: {shape_id} was not found")
+            print(f"Error: shape id:+ {shape_id} does not exist in the system")
         # save the new list to the json file
         self.save_to_json()
-        print(f"Shape with id: {shape_id} deleted successfully")
+
 
     def save_to_json(self):
         """

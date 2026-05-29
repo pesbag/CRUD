@@ -25,7 +25,7 @@ def add_shape(shape_manage):
     :param shape_manage: the shape manger class to handle the add
     :return: None
     """
-    shape=input("enter shape")
+    shape=input("enter shape").strip()
     if shape.isalpha():
         try:
             # trying to add a new shape to our collection except of class not found or parameters illegal
@@ -68,15 +68,15 @@ def shape_update(shape_manage):
     print(f"The class {shape_type} was found")
     try:
         input_func = shape_manage.shapes_dict[shape_type]["input_func"]
-        new_data = input_func(shape_manager)
-    except Exception as e:
-        print(f"Error: {e}")
+        new_data = input_func(shape_manage)
+
+        shape_manage.update_shape(shape_id, new_data)
+
+        print("The updated list is: \n")
+        shape_manage.get_all_shapes()
+    except ValueError:
+        print("Error: update failed, the parameters must be positive integers")
         return
-
-    shape_manage.update_shape(shape_id, new_data)
-
-    print("The updated list is: \n")
-    shape_manage.get_all_shapes()
 
 def delete_shapes(shape_manage):
     """
@@ -85,10 +85,14 @@ def delete_shapes(shape_manage):
     :return:
     """
     try:
-        shape_id=int(input("please enter shape id to remove"))
+        shape_id=int(input("please enter shape id to remove").strip())
+        if shape_id <= 0:
+            print("Error: shape id must be a positive integer")
+            return
         shape_manage.delete_shape(shape_id)
     except ValueError:
         logger.exception("Error: the id shape to remove should be a positive integer")
+        print("Error: invalid input, shape id must be a positive integer")
         raise
 
 def main():
@@ -106,7 +110,10 @@ def main():
         elif choice=="2":
             get_shapes(shape_manage)
         if choice=="3":
-            shape_update(shape_manage)
+            try:
+                shape_update(shape_manage)
+            except ValueError:
+                print(f"Error: the paramters you enters is illegal")
             # shape_manager.update_shape(shape_manage)
         elif choice == "4":
             try:
