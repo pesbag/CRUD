@@ -6,26 +6,18 @@ import logging
 logger=logging.getLogger('shape')
 
 def show_menu():
-     choice=input("press 1 to Add shape\n "
+     choice=input("\npress 1 to Add shape\n "
           "press 2 to Show all shapes\n "
           "press 3 to Update shape\n "
           "press 4 to Delete shape\n "
           "press 5 to Exit ")
-     is_valid=validate_chose_menu(choice)
-     logger.info("check the validation of the user input")
-     if not is_valid:
-         choice="0"
-     return choice
 
-def validate_chose_menu(choice):
-    """
-    check the validation of  the choice which include only digits
-    :return: True if valid, else False
-    """
-    for c in choice:
-        if not c.isdigit:
-            return False
-    return True
+     if not choice.isdigit():
+         logger.error(f"Error: the value {choice} is illegal input. please try again")
+         print(f"Error: the value {choice} is illegal input. please try again")
+         choice="0"
+         logger.info("because of unvalid input we put a defultive value to sign the process to continue")
+     return choice
 
 def add_shape(shape_manage):
     """
@@ -34,21 +26,17 @@ def add_shape(shape_manage):
     :return: None
     """
     shape=input("enter shape")
-    is_valid_shape=validate_shape_input(shape)
-    if is_valid_shape:
-        shape_manage.create_shape(shape)
+    if shape.isalpha():
+        try:
+            # trying to add a new shape to our collection except of class not found or parameters illegal
+            shape_manage.create_shape(shape)
+        except KeyError:
+            print(f"Error shape class {shape} was not found, please try again")
+        except ValueError:
+            print("the values of parameters should be positive integers")
     else:
         logger.exception("Error the value should contain only characters ")
-
-def validate_shape_input(shape):
-    """
-    get a shape object name and check if it valid name
-    return True if valid. False else
-    """
-    for c in shape:
-        if not c.isalpha:
-            return True
-    return False
+        print(f"Error the value {shape} should contain only characters")
 
 def get_shapes(shape_manage):
     """
@@ -56,11 +44,39 @@ def get_shapes(shape_manage):
     :param shape_manage: the shape manger class
     :return:
     """
+    logger.info("enterd to get_shape function")
     shape_manage.get_all_shapes()
 
-def update_shapes(shape_manage):
+def shape_update(shape_manage):
+    """"
+    get from the user shape id for update and update the shape parameters
+    """
+    logger.info("enter to shape_update function")
+    try:
+        shape_id = int(input("please enter the id shape for update\n"))
+    except ValueError:
+        print("Error: shape is should be a positive integer")
+        logger.exception("Error: shape is should be a positive integer")
+        return
+    # find the shape object by shape_id
+    shape_to_update = shape_manage.get_shape_by_id(shape_id)
+    if not shape_to_update:
+        print(f"Error: the shape id: {shape_id} was not found")
+        return
+    # find the class (shape_type) of the object
+    shape_type = shape_to_update.shape_type
+    print(f"The class {shape_type} was found")
+    try:
+        input_func = shape_manage.shapes_dict[shape_type]["input_func"]
+        new_data = input_func(shape_manager)
+    except Exception as e:
+        print(f"Error: {e}")
+        return
 
-    shape_manage.update_shapes()
+    shape_manage.update_shape(shape_id, new_data)
+
+    print("The updated list is: \n")
+    shape_manage.get_all_shapes()
 
 def delete_shapes(shape_manage):
     """
@@ -86,11 +102,12 @@ def main():
             try:
                 add_shape(shape_manage)
             except KeyError:
-                logger.exception(f"Error: the shape you enterd is not apart of the shapes of the system")
+                logger.exception(f"Error: the shape you enter is not apart of the shapes of the system")
         elif choice=="2":
             get_shapes(shape_manage)
         if choice=="3":
-            shape_manager.update_shapes()
+            shape_update(shape_manage)
+            # shape_manager.update_shape(shape_manage)
         elif choice == "4":
             try:
                 delete_shapes(shape_manage)

@@ -4,7 +4,7 @@ import logging
 
 logger=logging.getLogger('shape')
 class Square(Shape):
-    def __init__(self,shape_id,side,shape_type="square"):
+    def __init__(self,shape_id,side,shape_type="square",**kwargs):
         """
         initial square
         :param shape_id: square id
@@ -35,14 +35,16 @@ class Square(Shape):
         :return: dictionary of the data
         """
         logger.debug("enter to to_dict of Shape")
-        return {"shape_id": self.id, "shape_type": self.shape_type,"side":self._side,
+        return {"shape_id": self.shape_id, "shape_type": self.shape_type,"side":self._side,
                 "area":self.get_area(),"perimeter":self.get_perimeter()}
-    # def get_params(self):
-    #     side = input("please enter side of square")
-    #     try:
-    #         return int(side)
-    #     except ValueError:
-    #         print(f"Error: the value {side} illegal")
+
+    def __str__(self):
+        """"
+        function to print square data
+        :return: the square data
+        """
+        return (f"{super().__str__()}\nSide:{self._side}\n"
+                f"Area:{self.get_area()}\nPerimeter:{self.get_perimeter()}")
 
 def main():
     s1=Square(5,7)

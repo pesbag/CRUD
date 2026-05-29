@@ -10,7 +10,7 @@ class Shape:
         :param shape_type: type of shapse to initilaize
         """
         logger.debug("enter to  init of Shape class")
-        self.id = shape_id
+        self.shape_id = shape_id
         self.shape_type = shape_type
 
     def get_area(self):
@@ -35,7 +35,14 @@ class Shape:
         :return: dictionary of the data
         """
         logger.debug("enter to to_dict of Shape")
-        return {"shape_id":self.id,"shape_type":self.shape_type}
+        return {"shape_id":self.shape_id,"shape_type":self.shape_type}
+
+    def __str__(self):
+        """"
+        use to prints the objects
+        :return: the object
+        """
+        return f"\nid:{self.shape_id}\nType:{self.shape_type}"
 
     def get_params(self):
         """

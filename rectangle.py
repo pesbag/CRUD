@@ -5,7 +5,7 @@ import logging
 logger=logging.getLogger('shape')
 
 class Rectangle(Shape):
-    def __init__(self, shape_id,length,width,shape_type="rectangle"):
+    def __init__(self, shape_id,length,width,shape_type="rectangle",**kwargs):
         """
         initial rectangle 
         :param shape_id: rectangle id
@@ -17,6 +17,7 @@ class Rectangle(Shape):
         super().__init__(shape_id,shape_type)
         self._length=length
         self._width=width
+
     def get_perimeter(self):
         """
         :return: the perimeter rectangle
@@ -37,8 +38,16 @@ class Rectangle(Shape):
         :return: dictionary of the data
         """
         logger.info("enter to to_dict of Shape")
-        return {"shape_id": self.id, "shape_type": self.shape_type,"width":self._width,"length":self._length
+        return {"shape_id": self.shape_id, "shape_type": self.shape_type,"width":self._width,"length":self._length
             ,"area":self.get_area(),"perimeter":self.get_perimeter()}
+
+    def __str__(self):
+        """
+        function for print rectangle data
+        :return: rectangle data
+        """
+        return (f"{super().__str__()}\nWidth:{self._width}\nLength:{self._length}\n"
+                f"Area:{self.get_area()}\nPerimeter:{self.get_perimeter()}")
 
 def main():
     s1=Rectangle(3,7,6)
