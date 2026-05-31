@@ -2700,3 +2700,75 @@ ValueError: invalid literal for int() with base 10: 's'
 2026-05-29 13:32:55,905 | INFO | enter to get area of rectangle 
 2026-05-29 13:32:55,905 | INFO | enter to get perimetr of rectangle
 2026-05-29 13:32:55,905 | INFO | Success to update json file
+2026-05-31 07:22:57,183 | INFO | enter to load_from_json
+2026-05-31 07:22:57,184 | INFO | enterd to get_shape function
+2026-05-31 07:22:57,184 | INFO | enter to get_all_shapes function
+2026-05-31 07:22:57,184 | INFO | enter to load_from_json
+2026-05-31 07:22:57,185 | INFO | load the shapes from json file in get_all_shapes function
+2026-05-31 07:22:57,185 | INFO | enter to get area of square 
+2026-05-31 07:22:57,185 | INFO | enter to get perimetr of square
+2026-05-31 07:22:57,185 | INFO | enter to get area of square 
+2026-05-31 07:22:57,185 | INFO | enter to get perimetr of square
+2026-05-31 07:22:57,185 | INFO | enter to get area of circle 
+2026-05-31 07:22:57,186 | INFO | enter to get perimetr of circle 
+2026-05-31 07:22:57,186 | INFO | enter to get area of square 
+2026-05-31 07:22:57,186 | INFO | enter to get perimetr of square
+2026-05-31 07:22:57,186 | INFO | enter to get area of rectangle 
+2026-05-31 07:22:57,186 | INFO | enter to get perimetr of rectangle
+2026-05-31 07:23:19,794 | INFO | enter to load_from_json
+2026-05-31 07:23:24,380 | INFO | enter to delete shape
+2026-05-31 07:23:24,380 | INFO | enter to load_from_json
+2026-05-31 07:23:24,380 | INFO | enter to save_to_json
+2026-05-31 07:23:24,381 | INFO | enter to get area of square 
+2026-05-31 07:23:24,381 | INFO | enter to get perimetr of square
+2026-05-31 07:23:24,381 | INFO | enter to get area of square 
+2026-05-31 07:23:24,381 | INFO | enter to get perimetr of square
+2026-05-31 07:23:24,381 | INFO | enter to get area of circle 
+2026-05-31 07:23:24,382 | INFO | enter to get perimetr of circle 
+2026-05-31 07:23:24,382 | INFO | enter to to_dict of Shape
+2026-05-31 07:23:24,382 | INFO | enter to get area of rectangle 
+2026-05-31 07:23:24,382 | INFO | enter to get perimetr of rectangle
+2026-05-31 07:23:24,382 | INFO | Success to update json file
+2026-05-31 07:23:30,755 | INFO | enter to load_from_json
+2026-05-31 07:23:30,755 | INFO | enterd to get_shape function
+2026-05-31 07:23:30,756 | INFO | enter to get_all_shapes function
+2026-05-31 07:23:30,756 | INFO | enter to load_from_json
+2026-05-31 07:23:30,756 | INFO | load the shapes from json file in get_all_shapes function
+2026-05-31 07:23:30,756 | INFO | enter to get area of square 
+2026-05-31 07:23:30,756 | INFO | enter to get perimetr of square
+2026-05-31 07:23:30,756 | INFO | enter to get area of square 
+2026-05-31 07:23:30,756 | INFO | enter to get perimetr of square
+2026-05-31 07:23:30,756 | INFO | enter to get area of circle 
+2026-05-31 07:23:30,757 | INFO | enter to get perimetr of circle 
+2026-05-31 07:23:30,757 | INFO | enter to get area of rectangle 
+2026-05-31 07:23:30,757 | INFO | enter to get perimetr of rectangle
+2026-05-31 07:23:46,115 | INFO | enter to load_from_json
+2026-05-31 07:23:46,115 | INFO | enter to shape_update function
+2026-05-31 07:23:52,142 | INFO | enter to load_from_json
+2026-05-31 07:23:52,142 | INFO | enter to get_rectangle function
+2026-05-31 07:24:00,936 | INFO | enter to update_shape function
+2026-05-31 07:24:00,936 | INFO | enter to load_from_json
+2026-05-31 07:24:00,936 | INFO | enter to load_from_json
+2026-05-31 07:24:00,937 | INFO | enter to save_to_json
+2026-05-31 07:24:00,937 | INFO | enter to get area of square 
+2026-05-31 07:24:00,937 | INFO | enter to get perimetr of square
+2026-05-31 07:24:00,937 | INFO | enter to get area of square 
+2026-05-31 07:24:00,937 | INFO | enter to get perimetr of square
+2026-05-31 07:24:00,937 | INFO | enter to get area of circle 
+2026-05-31 07:24:00,937 | INFO | enter to get perimetr of circle 
+2026-05-31 07:24:00,937 | INFO | enter to to_dict of Shape
+2026-05-31 07:24:00,937 | INFO | enter to get area of rectangle 
+2026-05-31 07:24:00,938 | INFO | enter to get perimetr of rectangle
+2026-05-31 07:24:00,938 | INFO | Success to update json file
+2026-05-31 07:24:00,938 | INFO | enter to get_all_shapes function
+2026-05-31 07:24:00,938 | INFO | enter to load_from_json
+2026-05-31 07:24:00,938 | INFO | load the shapes from json file in get_all_shapes function
+2026-05-31 07:24:00,938 | INFO | enter to get area of square 
+2026-05-31 07:24:00,938 | INFO | enter to get perimetr of square
+2026-05-31 07:24:00,939 | INFO | enter to get area of square 
+2026-05-31 07:24:00,939 | INFO | enter to get perimetr of square
+2026-05-31 07:24:00,939 | INFO | enter to get area of circle 
+2026-05-31 07:24:00,939 | INFO | enter to get perimetr of circle 
+2026-05-31 07:24:00,939 | INFO | enter to get area of rectangle 
+2026-05-31 07:24:00,939 | INFO | enter to get perimetr of rectangle
+2026-05-31 07:24:12,840 | INFO | enter to load_from_json

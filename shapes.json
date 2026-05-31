@@ -21,18 +21,11 @@
         "perimeter": 6.283
     },
     {
-        "shape_id": 6,
-        "shape_type": "square",
-        "side": 4,
-        "area": 16,
-        "perimeter": 16
-    },
-    {
         "shape_id": 7,
         "shape_type": "rectangle",
-        "width": 8,
-        "length": 1,
-        "area": 8,
-        "perimeter": 18
+        "width": 3,
+        "length": 3,
+        "area": 9,
+        "perimeter": 12
     }
 ]
