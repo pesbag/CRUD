@@ -2772,3 +2772,18 @@ ValueError: invalid literal for int() with base 10: 's'
 2026-05-31 07:24:00,939 | INFO | enter to get area of rectangle 
 2026-05-31 07:24:00,939 | INFO | enter to get perimetr of rectangle
 2026-05-31 07:24:12,840 | INFO | enter to load_from_json
+2026-05-31 08:45:22,988 | INFO | enter to load_from_json
+2026-05-31 08:45:27,533 | INFO | enter to create shape
+2026-05-31 08:45:27,533 | INFO | enter to load_from_json
+2026-05-31 08:45:27,533 | INFO | loaded the json file to shapes list
+2026-05-31 08:45:27,533 | ERROR | Error shape class Circle was not found
+Traceback (most recent call last):
+  File "C:\Users\bgdps\Documents\kodcode_projects\crud\shape_manager.py", line 128, in create_shape
+    target_type=self.shapes_dict[shape]
+                ~~~~~~~~~~~~~~~~^^^^^^^
+KeyError: 'Circle'
+2026-05-31 08:46:05,751 | INFO | enter to load_from_json
+2026-05-31 08:46:09,166 | INFO | enter to create shape
+2026-05-31 08:46:09,166 | INFO | enter to load_from_json
+2026-05-31 08:46:09,167 | INFO | loaded the json file to shapes list
+2026-05-31 08:46:09,167 | INFO | enter to get_circle function

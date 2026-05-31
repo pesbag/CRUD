@@ -26,7 +26,7 @@ def add_shape(shape_manage):
     :param shape_manage: the shape manger class to handle the add
     :return: None
     """
-    shape=input("enter shape").strip()
+    shape=input("enter shape").strip().lower()
     if shape.isalpha():
         try:
             # trying to add a new shape to our collection except of class not found or parameters illegal
