@@ -112,41 +112,63 @@ class ShapeManager:
                    "square": {"class": Square, "input_func": get_square},
                    "rectangle": {"class": Rectangle, "input_func": get_rectangle}}
 
-    def create_shape(self, shape):
-        """
-        creating object of specific shape
-        :param shape: the specific shape to create
-        :return:
-        """
-        logger.info("enter to create shape")
-        # load to the list the exists objects for add them the new variables
-        self.shapes = self.load_from_json()
-        logger.info("loaded the json file to shapes list")
+    # def create_shape(self, shape):
+    #     """
+    #     creating object of specific shape
+    #     :param shape: the specific shape to create
+    #     :return:
+    #     """
+    #     logger.info("enter to create shape")
+    #     # load to the list the exists objects for add them the new variables
+    #     self.shapes = self.load_from_json()
+    #     logger.info("loaded the json file to shapes list")
+    #     # self.analys_param_of_shape(shape)
+    #
+    #     # find the type of object to create from the objects dictionary
+    #     try:
+    #         target_type=self.shapes_dict[shape]
+    #     except KeyError:
+    #         logger.exception(f"Error shape class {shape} was not found")
+    #         raise
+    #     # start the function of the shape object to get the relevant parameters
+    #     try:
+    #         shape_params_func=target_type["input_func"](self)
+    #     except ValueError:
+    #         logger.exception("ValueError: the values should be a positive integer")
+    #         print("Error: the values is illegal, the values should be a positive integer")
+    #         raise
+    #
+    #     # find a uniq id for the new shape
+    #     new_shape_id = self.find_id_to_shape(self.shapes)
+    #     # create the new object needed including the uniq id and the relevant parameters
+    #     new_shape_object=target_type["class"](new_shape_id,**shape_params_func)
+    #     # add the new object to the objects list
+    #     self.shapes.append(new_shape_object)
+    #     logger.info("add the new object to the objects list")
+    #     # save it to json file
+    #     self.save_to_json()
 
+    def analys_param_of_shape(self,shape):
         # find the type of object to create from the objects dictionary
         try:
-            target_type=self.shapes_dict[shape]
+            target_type = self.shapes_dict[shape]
         except KeyError:
             logger.exception(f"Error shape class {shape} was not found")
             raise
         # start the function of the shape object to get the relevant parameters
         try:
-            shape_params_func=target_type["input_func"](self)
+            shape_params_func = target_type["input_func"](self)
         except ValueError:
             logger.exception("ValueError: the values should be a positive integer")
-            print("Error: the value is illegal, the values should be a positive integer")
+            print("Error: the values is illegal, the values should be a positive integer")
             raise
-
         # find a uniq id for the new shape
         new_shape_id = self.find_id_to_shape(self.shapes)
         # create the new object needed including the uniq id and the relevant parameters
-        new_shape_object=target_type["class"](new_shape_id,**shape_params_func)
+        new_shape_object = target_type["class"](new_shape_id, **shape_params_func)
         # add the new object to the objects list
         self.shapes.append(new_shape_object)
         logger.info("add the new object to the objects list")
-        # save it to json file
-        self.save_to_json()
-        logger.info("save it to json file")
 
     def get_all_shapes(self):
         """
@@ -156,9 +178,10 @@ class ShapeManager:
         logger.info("enter to get_all_shapes function")
         all_shapes=self.load_from_json()
         logger.info("load the shapes from json file in get_all_shapes function")
-        for s in all_shapes:
-            print(s,end="\n")
-
+        return all_shapes
+        # for s in all_shapes:
+            # print(s,end="\n")
+            # return s
     def update_shape(self, shape_id, new_data):
         """
         get an id of shape and update the shape values
@@ -215,6 +238,7 @@ class ShapeManager:
         if not is_found:
             logger.error(f"error: the shape id: {shape_id} was not found")
             print(f"Error: shape id:+ {shape_id} does not exist in the system")
+        return is_found
         # save the new list to the json file
         self.save_to_json()
 
@@ -250,6 +274,7 @@ class ShapeManager:
             logger.info("Error: cannot read the json file, it possible to have the first time of writing to the json file")
             data = []
         object_lst=self.convert_data_to_objects(data)
+        print("The object list",object_lst)
         return object_lst
 
     def convert_data_to_objects(self,data_dict):

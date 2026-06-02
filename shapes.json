@@ -27,5 +27,19 @@
         "length": 3,
         "area": 9,
         "perimeter": 12
+    },
+    {
+        "shape_id": 8,
+        "shape_type": "square",
+        "side": 5,
+        "area": 25,
+        "perimeter": 20
+    },
+    {
+        "shape_id": 9,
+        "shape_type": "square",
+        "side": 5,
+        "area": 25,
+        "perimeter": 20
     }
 ]
