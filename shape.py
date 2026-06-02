@@ -50,3 +50,16 @@ class Shape:
         :return:
         """
         pass
+
+    def is_negative_value(self,val):
+        """
+        check if the value length is negative
+        :param val: the length
+        :raise:
+        """
+        if len(val) <= 1:
+            return
+        if val[0] == "-":
+            logger.error(f"Error: length of side cannot be negative ({val})")
+            print(f"Error: length of side cannot be negative ({val})")
+            raise ValueError("Length cannot be negative")

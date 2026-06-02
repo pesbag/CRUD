@@ -29,8 +29,16 @@ def add_shape(shape_manage):
     shape=input("enter shape").strip().lower()
     if shape.isalpha():
         try:
+            is_resembl=False
+            for k,v in shape_manage.shapes_dict.items():
+                is_resembl=True
+                if k == shape:
+                    shape_instance=v
+                    new_params=shape_instance().get_params()
+            if not is_resembl:
+                raise KeyError
             # trying to add a new shape to our collection except of class not found or parameters illegal
-            shape_manage.create_shape(shape)
+            shape_manage.create_shape_1(new_params)
         except KeyError:
             print(f"Error shape class {shape} was not found, please try again")
         except ValueError:
@@ -45,7 +53,7 @@ def get_shapes(shape_manage):
     :param shape_manage: the shape manger class
     :return:
     """
-    logger.info("enterd to get_shape function")
+    logger.info("enter to get_shape function")
     shape_manage.get_all_shapes()
 
 def shape_update(shape_manage):
@@ -55,26 +63,31 @@ def shape_update(shape_manage):
     logger.info("enter to shape_update function")
     try:
         shape_id = int(input("please enter the id shape for update\n"))
+        if shape_id <= 0:
+            print("Error: shape id must be a positive integer")
+            return
     except ValueError:
-        print("Error: shape is should be a positive integer")
-        logger.exception("Error: shape is should be a positive integer")
+        print("Error: shape id should be a positive integer")
+        logger.exception("Error: shape id should be a positive integer")
         return
-    # find the shape object by shape_id
+
     shape_to_update = shape_manage.get_shape_by_id(shape_id)
     if not shape_to_update:
         print(f"Error: the shape id: {shape_id} was not found")
         return
-    # find the class (shape_type) of the object
+
     shape_type = shape_to_update.shape_type
-    print(f"The class {shape_type} was found")
+    print(f"The shape of type '{shape_type}' was found")
+
     try:
-        input_func = shape_manage.shapes_dict[shape_type]["input_func"]
-        new_data = input_func(shape_manage)
+        print(f"Please enter the NEW parameters for this {shape_type}:")
+        new_data = shape_to_update.get_params()
 
         shape_manage.update_shape(shape_id, new_data)
 
         print("The updated list is: \n")
         shape_manage.get_all_shapes()
+
     except ValueError:
         print("Error: update failed, the parameters must be positive integers")
         return

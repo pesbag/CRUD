@@ -33,5 +33,11 @@ def delete_shape(id:int):
 
 @app.post("/shapes")
 def create_new_shape(data: dict):
-    result=shape_manage.create_shape(data["shape_type"])
+    result=shape_manage.create_shape_1(data)
     return result
+@app.put("/shapes/{id}")
+def change_params(id:int,data:dict):
+    return shape_manage.update_shape(id,data)
+@app.get("/shapes/total-area")
+def sum_of_all_area_shapes():
+    pass

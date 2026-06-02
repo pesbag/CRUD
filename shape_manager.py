@@ -48,105 +48,30 @@ class ShapeManager:
             new_id=max([shape.shape_id for shape in all_data]) + 1
             logger.info("find new id for shape")
         return new_id
-    def is_negative_value(self,val):
-        """
-        check if the value length is negative
-        :param val: the length
-        :raise:
-        """
-        if len(val)<=1:
-            return
-        if val[0]=="-":
-            logger.error(f"Error: length of side cannot be negative ({val})")
-            print(f"Error: length of side cannot be negative ({val})")
-            raise ValueError("Length cannot be negative")
 
-    def get_rectangle(self):
-        """
-        get a values for the rectangle sides
-        :return: dictionary represent the recantgle values
-        :raises: ValueError: if one of the values illegal
-        """
-        logger.info("enter to get_rectangle function")
-        width = input("please enter width of rectangle\n").strip()
-        self.is_negative_value(width)
-        length = input("please enter length of rectangle\n").strip()
-        self.is_negative_value(length)
-        try:
-            return {"width": int(width), "length": int(length)}
-        except ValueError:
-            logger.exception(f"Error: the values {width},{length} illegal")
-            raise
+    shapes_dict = {"circle": Circle,
+                   "square": Square,
+                   "rectangle": Rectangle}
 
-    def get_circle(self):
-        """
-        get a radius for the circle
-        :return: dictionary when the key is 'radius' and the value is integer represent the radius
-        :raises:ValueError:
-        """
-        logger.info("enter to get_circle function")
-        radius = input("please enter radius of circle\n").strip()
-        self.is_negative_value(radius)
-        try:
-            return {"radius": int(radius)}
-        except ValueError:
-            logger.exception(f"Error: the value {radius} illegal")
-            raise
+    def create_shape_1(self,shape_data):
+        self.shapes = self.load_from_json()
+        shape_type=shape_data["shape_type"]
+        if shape_type not in self.shapes_dict:
+            return None
+        else:
+            params = shape_data.copy()
+            params.pop("shape_type", None)
+            params.pop("shape_id", None)
+            new_shape_id = self.find_id_to_shape(self.shapes)
+            shape_class=self.shapes_dict[shape_type]
+            new_shape_object = shape_class(new_shape_id, **params)
+            print(type(new_shape_object))
+            self.shapes.append(new_shape_object)
+            print(self.shapes)
+            self.save_to_json()
+            logger.info(f"Successfully created and saved {shape_type} with ID {new_shape_id}")
 
-    def get_square(self):
-        """
-        get a side value for the square
-        :return: dictionary represent the square values
-        :raises: ValueError: if one of the values illegal
-        """
-        logger.info("enter to get_square function")
-        side = input("please enter side of square\n").strip()
-        self.is_negative_value(side)
-        try:
-            return {"side": int(side)}
-        except ValueError:
-            logger.exception(f"Error: the value {side} illegal")
-            raise
-
-    shapes_dict = {"circle": {"class": Circle, "input_func": get_circle},
-                   "square": {"class": Square, "input_func": get_square},
-                   "rectangle": {"class": Rectangle, "input_func": get_rectangle}}
-
-    # def create_shape(self, shape):
-    #     """
-    #     creating object of specific shape
-    #     :param shape: the specific shape to create
-    #     :return:
-    #     """
-    #     logger.info("enter to create shape")
-    #     # load to the list the exists objects for add them the new variables
-    #     self.shapes = self.load_from_json()
-    #     logger.info("loaded the json file to shapes list")
-    #     # self.analys_param_of_shape(shape)
-    #
-    #     # find the type of object to create from the objects dictionary
-    #     try:
-    #         target_type=self.shapes_dict[shape]
-    #     except KeyError:
-    #         logger.exception(f"Error shape class {shape} was not found")
-    #         raise
-    #     # start the function of the shape object to get the relevant parameters
-    #     try:
-    #         shape_params_func=target_type["input_func"](self)
-    #     except ValueError:
-    #         logger.exception("ValueError: the values should be a positive integer")
-    #         print("Error: the values is illegal, the values should be a positive integer")
-    #         raise
-    #
-    #     # find a uniq id for the new shape
-    #     new_shape_id = self.find_id_to_shape(self.shapes)
-    #     # create the new object needed including the uniq id and the relevant parameters
-    #     new_shape_object=target_type["class"](new_shape_id,**shape_params_func)
-    #     # add the new object to the objects list
-    #     self.shapes.append(new_shape_object)
-    #     logger.info("add the new object to the objects list")
-    #     # save it to json file
-    #     self.save_to_json()
+            return new_shape_object
 
     def analys_param_of_shape(self,shape):
         # find the type of object to create from the objects dictionary
@@ -193,7 +118,13 @@ class ShapeManager:
         self.shapes = self.load_from_json()
 
         is_found = False
-        shape=self.get_shape_by_id(shape_id)
+        # shape=self.get_shape_by_id(shape_id)
+
+        shape = None
+        for s in self.shapes:
+            if s.shape_id == shape_id:
+                shape = s
+                break
 
         if isinstance(shape, Circle):
             is_found = True
@@ -238,9 +169,11 @@ class ShapeManager:
         if not is_found:
             logger.error(f"error: the shape id: {shape_id} was not found")
             print(f"Error: shape id:+ {shape_id} does not exist in the system")
-        return is_found
+
         # save the new list to the json file
         self.save_to_json()
+        return is_found
+
 
 
     def save_to_json(self):
@@ -249,6 +182,7 @@ class ShapeManager:
         :return:
         """
         logger.info("enter to save_to_json")
+        print(self.shapes)
         try:
             with open("shapes.json","w",encoding="utf-8") as f:
                 dict_shapes = [s.to_dict() for s in self.shapes]
@@ -276,6 +210,7 @@ class ShapeManager:
         object_lst=self.convert_data_to_objects(data)
         print("The object list",object_lst)
         return object_lst
+        # return data
 
     def convert_data_to_objects(self,data_dict):
         """
@@ -289,7 +224,7 @@ class ShapeManager:
             shape_id=shape_data.pop("shape_id")
             shape_type=shape_data.pop("shape_type")
             if shape_type in self.shapes_dict:
-                shape_class=self.shapes_dict[shape_type]["class"]
+                shape_class=self.shapes_dict[shape_type]
                 obj=shape_class(shape_id,**shape_data)
                 obj_lst.append(obj)
         return obj_lst

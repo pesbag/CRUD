@@ -5,7 +5,7 @@ import logging
 logger=logging.getLogger('shape')
 
 class Rectangle(Shape):
-    def __init__(self, shape_id,length,width,shape_type="rectangle",**kwargs):
+    def __init__(self, shape_id=None,length=None,width=None,shape_type="rectangle",**kwargs):
         """
         initial rectangle 
         :param shape_id: rectangle id
@@ -48,6 +48,23 @@ class Rectangle(Shape):
         """
         return (f"{super().__str__()}\nWidth:{self._width}\nLength:{self._length}\n"
                 f"Area:{self.get_area()}\nPerimeter:{self.get_perimeter()}")
+
+    def get_params(self):
+        """
+        get a values for the rectangle sides
+        :return: dictionary represent the recantgle values
+        :raises: ValueError: if one of the values illegal
+        """
+        logger.info("enter to get_rectangle function")
+        width = input("please enter width of rectangle\n").strip()
+        self.is_negative_value(width)
+        length = input("please enter length of rectangle\n").strip()
+        self.is_negative_value(length)
+        try:
+            return {"shape_type": "rectangle", "width": int(width), "length": int(length)}
+        except ValueError:
+            logger.exception(f"Error: the values {width},{length} illegal")
+            raise
 
 def main():
     s1=Rectangle(3,7,6)

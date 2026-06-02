@@ -6,7 +6,7 @@ import logging
 logger=logging.getLogger('shape')
 
 class Circle(Shape):
-    def __init__(self,shape_id, radius,shape_type="circle",**kwargs):
+    def __init__(self,shape_id=None, radius=None,shape_type="circle",**kwargs):
         """
         initial circle shape
         :param shape_id: circle id
@@ -46,6 +46,20 @@ class Circle(Shape):
         return (f"{super().__str__()}\nRadius:{self._radius}\n"
                 f"Area:{self.get_area()}\nPerimeter:{self.get_perimeter()}")
 
+    def get_params(self):
+        """
+        get a radius for the circle
+        :return: dictionary when the key is 'radius' and the value is integer represent the radius
+        :raises:ValueError:
+        """
+        logger.info("enter to get_circle function")
+        radius = input("please enter radius of circle\n").strip()
+        self.is_negative_value(radius)
+        try:
+            return {"shape_type": "circle", "radius": int(radius)}
+        except ValueError:
+            logger.exception(f"Error: the value {radius} illegal")
+            raise
 def main():
     s1=Circle(5,3)
     print(s1.get_perimeter())
