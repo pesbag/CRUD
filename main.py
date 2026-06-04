@@ -1,5 +1,5 @@
 #  https://github.com/pesbag/CRUD.git
-# link to git with the server https://github.com/pesbag/CRUD.git
+# link to git with the server: https://github.com/pesbag/CRUD.git
 from logging import exception
 
 import shape_manager

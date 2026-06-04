@@ -54,7 +54,6 @@ class ShapeManager:
                    "rectangle": Rectangle}
 
     def create_shape_1(self,shape_data):
-        # self.shapes = self.load_from_json()
         self.load_from_json()
         shape_type=shape_data["shape_type"]
         if shape_type not in self.shapes_dict:
