@@ -54,7 +54,8 @@ class ShapeManager:
                    "rectangle": Rectangle}
 
     def create_shape_1(self,shape_data):
-        self.shapes = self.load_from_json()
+        # self.shapes = self.load_from_json()
+        self.load_from_json()
         shape_type=shape_data["shape_type"]
         if shape_type not in self.shapes_dict:
             return None
@@ -67,7 +68,7 @@ class ShapeManager:
             new_shape_object = shape_class(new_shape_id, **params)
             print(type(new_shape_object))
             self.shapes.append(new_shape_object)
-            print(self.shapes)
+            print("self.shapes in create_shape_1",self.shapes)
             self.save_to_json()
             logger.info(f"Successfully created and saved {shape_type} with ID {new_shape_id}")
 
@@ -115,8 +116,9 @@ class ShapeManager:
         :return:
         """
         logger.info("enter to update_shape function")
-        self.shapes = self.load_from_json()
-
+        # self.shapes = self.load_from_json()
+        self.load_from_json()
+        print(f'from the server{self.load_from_json()}')
         is_found = False
         # shape=self.get_shape_by_id(shape_id)
 
@@ -144,9 +146,10 @@ class ShapeManager:
         if not is_found:
             logger.error(f"Error: shape with id {shape_id} not found")
             print(f"Error: shape with id {shape_id} not found")
-            return
+            return False
         self.save_to_json()
         print(f"shape {shape_id} updated successfully")
+        return True
 
     def delete_shape(self, shape_id):
         """
@@ -157,7 +160,8 @@ class ShapeManager:
         logger.info("enter to delete shape")
 
         # load the json file to list of dictionaries
-        self.shapes = self.load_from_json()
+        # self.shapes = self.load_from_json()
+        self.load_from_json()
         # create a new list with not including the shape id to remove
         is_found=False
         for index,shape in enumerate(self.shapes):
@@ -207,9 +211,10 @@ class ShapeManager:
         except json.JSONDecodeError:
             logger.info("Error: cannot read the json file, it possible to have the first time of writing to the json file")
             data = []
-        object_lst=self.convert_data_to_objects(data)
-        print("The object list",object_lst)
-        return object_lst
+        # object_lst=self.convert_data_to_objects(data)
+        self.shapes=self.convert_data_to_objects(data)
+        print("The object list",self.shapes)
+        return self.shapes
         # return data
 
     def convert_data_to_objects(self,data_dict):
@@ -229,12 +234,19 @@ class ShapeManager:
                 obj_lst.append(obj)
         return obj_lst
 
+    def get_sum_of_all_area(self):
+        self.load_from_json()
+        total_area=0
+        for shape in self.shapes:
+            total_area+=shape.get_area()
+        return total_area
 
 
 def main():
     c=ShapeManager()
-    print(c.create_shape("rectangle"))
-    print(c.create_shape("circle"))
+    # print(c.create_shape("rectangle"))
+    # print(c.create_shape("circle"))
+    print(c.get_sum_of_all_area())
     # c.get_all_shapes()
     # c.delete_shape(7)
     # c.delete_shape(6)

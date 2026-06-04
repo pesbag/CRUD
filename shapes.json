@@ -1,44 +1,24 @@
 [
     {
-        "shape_id": 4,
-        "shape_type": "square",
-        "side": 5,
-        "area": 25,
-        "perimeter": 20
+        "shape_id": 1,
+        "shape_type": "circle",
+        "radius": 1,
+        "area": 3.142,
+        "perimeter": 6.283
     },
     {
-        "shape_id": 5,
-        "shape_type": "square",
-        "side": 3,
-        "area": 9,
-        "perimeter": 12
+        "shape_id": 2,
+        "shape_type": "circle",
+        "radius": 45,
+        "area": 6361.725,
+        "perimeter": 282.743
     },
     {
-        "shape_id": 6,
-        "shape_type": "square",
-        "side": 2,
-        "area": 4,
-        "perimeter": 8
-    },
-    {
-        "shape_id": 7,
-        "shape_type": "square",
-        "side": 2,
-        "area": 4,
-        "perimeter": 8
-    },
-    {
-        "shape_id": 8,
-        "shape_type": "square",
-        "side": 2,
-        "area": 4,
-        "perimeter": 8
-    },
-    {
-        "shape_id": 9,
-        "shape_type": "square",
-        "side": 2,
-        "area": 4,
-        "perimeter": 8
+        "shape_id": 3,
+        "shape_type": "rectangle",
+        "width": 10,
+        "length": 10,
+        "area": 100,
+        "perimeter": 40
     }
 ]
