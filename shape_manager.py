@@ -29,8 +29,10 @@ class ShapeManager:
         :param shape_id: the shape object to find
         :return: shape object if exists, None else
         """
-        self.shapes = self.load_from_json()
-        for shape in self.shapes:
+        shape_obj_list = self.load_from_json()
+        if not shape_obj_list:
+            return False
+        for shape in shape_obj_list:
             if shape.shape_id == shape_id:
                 return shape
         return None
@@ -65,7 +67,7 @@ class ShapeManager:
             new_shape_id = self.find_id_to_shape(self.shapes)
             shape_class=self.shapes_dict[shape_type]
             new_shape_object = shape_class(new_shape_id, **params)
-            print(type(new_shape_object))
+            # print(type(new_shape_object))
             self.shapes.append(new_shape_object)
             print("self.shapes in create_shape_1",self.shapes)
             self.save_to_json()
@@ -104,9 +106,7 @@ class ShapeManager:
         all_shapes=self.load_from_json()
         logger.info("load the shapes from json file in get_all_shapes function")
         return all_shapes
-        # for s in all_shapes:
-            # print(s,end="\n")
-            # return s
+
     def update_shape(self, shape_id, new_data):
         """
         get an id of shape and update the shape values
@@ -115,11 +115,9 @@ class ShapeManager:
         :return:
         """
         logger.info("enter to update_shape function")
-        # self.shapes = self.load_from_json()
         self.load_from_json()
-        print(f'from the server{self.load_from_json()}')
+        # print(f"from the server{self.load_from_json()}")
         is_found = False
-        # shape=self.get_shape_by_id(shape_id)
 
         shape = None
         for s in self.shapes:
@@ -131,16 +129,32 @@ class ShapeManager:
             is_found = True
             if "radius" in new_data:
                 shape._radius = new_data["radius"]
+            else:
+                print("Error missing radius of circle in update shape")
+                logger.error("Error missing radius of circle in update shape")
+                return False
         elif isinstance(shape, Square):
             is_found = True
             if "side" in new_data:
                 shape._side = new_data["side"]
+            else:
+                print("Error missing side of square in update shape")
+                logger.error("Error missing side of square in update shape")
+                return False
         elif isinstance(shape, Rectangle):
             is_found = True
             if "width" in new_data:
                 shape._width = new_data["width"]
+            else:
+                print("Error missing width of rectangle in update shape")
+                logger.error("Error missing width of rectangle in update shape")
+                return False
             if "length" in new_data:
                 shape._length = new_data["length"]
+            else:
+                print("Error missing length of rectangle in update shape")
+                logger.error("Error missing length of rectangle in update shape")
+                return False
 
         if not is_found:
             logger.error(f"Error: shape with id {shape_id} not found")
@@ -157,9 +171,7 @@ class ShapeManager:
         :return:
         """
         logger.info("enter to delete shape")
-
         # load the json file to list of dictionaries
-        # self.shapes = self.load_from_json()
         self.load_from_json()
         # create a new list with not including the shape id to remove
         is_found=False
@@ -172,7 +184,6 @@ class ShapeManager:
         if not is_found:
             logger.error(f"error: the shape id: {shape_id} was not found")
             print(f"Error: shape id:+ {shape_id} does not exist in the system")
-
         # save the new list to the json file
         self.save_to_json()
         return is_found
@@ -185,7 +196,7 @@ class ShapeManager:
         :return:
         """
         logger.info("enter to save_to_json")
-        print(self.shapes)
+        # print(self.shapes)
         try:
             with open("shapes.json","w",encoding="utf-8") as f:
                 dict_shapes = [s.to_dict() for s in self.shapes]
@@ -206,15 +217,11 @@ class ShapeManager:
                 data=json.load(f)
         except FileNotFoundError:
             logger.exception("Error: The json file was not found")
-            data = []
         except json.JSONDecodeError:
             logger.info("Error: cannot read the json file, it possible to have the first time of writing to the json file")
-            data = []
-        # object_lst=self.convert_data_to_objects(data)
         self.shapes=self.convert_data_to_objects(data)
         print("The object list",self.shapes)
         return self.shapes
-        # return data
 
     def convert_data_to_objects(self,data_dict):
         """
@@ -231,6 +238,9 @@ class ShapeManager:
                 shape_class=self.shapes_dict[shape_type]
                 obj=shape_class(shape_id,**shape_data)
                 obj_lst.append(obj)
+            else:
+                print(f"Error: class {shape_type} was not found")
+                return False
         return obj_lst
 
     def get_sum_of_all_area(self):
@@ -245,11 +255,13 @@ def main():
     c=ShapeManager()
     # print(c.create_shape("rectangle"))
     # print(c.create_shape("circle"))
-    print(c.get_sum_of_all_area())
+    # print(c.get_sum_of_all_area())
     # c.get_all_shapes()
     # c.delete_shape(7)
     # c.delete_shape(6)
-    c.get_all_shapes()
+    # c.get_all_shapes()
     # c.update_shape(1)
+    # print(c. update_shape(1, {"rad": 1}))
+    print(c.get_shape_by_id(2))
 if __name__ == '__main__':
     main()

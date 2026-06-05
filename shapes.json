@@ -7,18 +7,18 @@
         "perimeter": 6.283
     },
     {
-        "shape_id": 2,
-        "shape_type": "circle",
-        "radius": 45,
-        "area": 6361.725,
-        "perimeter": 282.743
-    },
-    {
         "shape_id": 3,
         "shape_type": "rectangle",
         "width": 10,
         "length": 10,
         "area": 100,
         "perimeter": 40
+    },
+    {
+        "shape_id": 4,
+        "shape_type": "square",
+        "side": 2,
+        "area": 4,
+        "perimeter": 8
     }
 ]

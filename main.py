@@ -32,8 +32,8 @@ def add_shape(shape_manage):
         try:
             is_resembl=False
             for k,v in shape_manage.shapes_dict.items():
-                is_resembl=True
                 if k == shape:
+                    is_resembl = True
                     shape_instance=v
                     new_params=shape_instance().get_params()
             if not is_resembl:
@@ -81,7 +81,7 @@ def shape_update(shape_manage):
     print(f"The shape of type '{shape_type}' was found")
 
     try:
-        print(f"Please enter the NEW parameters for this {shape_type}:")
+        print(f"Please enter the *new* parameters for this {shape_type}:")
         new_data = shape_to_update.get_params()
 
         shape_manage.update_shape(shape_id, new_data)
